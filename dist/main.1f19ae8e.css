@@ -664,7 +664,87 @@ nav__item:first-child {
   .section1__form {
     position: relative;
     margin: auto;
+    min-width: 100%;
+    width: 100%;
+    padding: 40px 16px;
   }
+}
+
+.section2 {
+  max-width: 100%;
+  width: 100%;
+  padding: 80px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 992px) {
+  .section2 {
+    padding: 120px 16px;
+  }
+}
+.section2__title {
+  font-size: 1.75rem;
+  line-height: 120%;
+  color: #2d9cdb;
+  font-weight: 900;
+  margin-bottom: 64px;
+}
+@media screen and (min-width: 992px) {
+  .section2__title {
+    margin-bottom: 80px;
+  }
+}
+.section2__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 992px) {
+  .section2__content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 1150px;
+  }
+}
+.section2__card {
+  margin-bottom: 50px;
+}
+.section2__card:last-child {
+  margin-bottom: 0;
+}
+
+.for-someone-card {
+  max-width: 264px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.for-someone-card__image {
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 992px) {
+  .for-someone-card__image {
+    min-height: 163px;
+  }
+}
+.for-someone-card__image svg {
+  margin: auto;
+}
+.for-someone-card__title {
+  font-size: 1.375rem;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.2px;
+  font-weight: 600;
+  color: #45555f;
+  margin-bottom: 13px;
+}
+.for-someone-card__description {
+  font-size: 1rem;
+  line-height: 140%;
+  text-align: center;
 }
 .feedback-form {
   display: flex;
