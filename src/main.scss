@@ -88,6 +88,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -102,6 +103,7 @@ menu,
 nav,
 section {
   display: block;
+  box-sizing: border-box;
 }
 body {
   line-height: 1;
@@ -159,6 +161,8 @@ body {
 .page {
   .page__header {
     height: 64px;
+    display: flex;
+    align-items: center;
 
     @media screen and (max-width: $screen-xl) {
       height: 56px;
@@ -167,6 +171,7 @@ body {
 }
 
 .header {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -213,6 +218,7 @@ body {
     @media screen and (max-width: $screen-xl) {
       display: block;
       position: absolute;
+      z-index: 2;
       top: 58px;
       left: 0;
       background: $main-bg-color;
@@ -288,16 +294,22 @@ nav {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding-top: calc(162/900*100vh);
+  padding-top: calc(162 / 900 * 100vh);
+  padding-left: 40px;
+  padding-right: 40px;
 
   @media screen and (max-width: $screen-xl) and (min-width: $screen-sm + 1px) {
     background-image: url("./images/main-img-tablet.jpg");
     background-position-x: left;
+    justify-content: flex-start;
+    padding-top: calc(120 / 1024 * 100vh);
   }
 
   @media screen and (max-width: $screen-sm) and (min-width: $screen-xs) {
     background-image: url("./images/loon-image-original-min.jpg");
     background-position-x: left;
+    flex-direction: column;
+    padding: 96px 16px 0;
   }
 
   &__promo {
@@ -315,19 +327,39 @@ nav {
     font-weight: bold;
     margin-bottom: 121px;
 
-    strong {
-      color: $strong-color;
+    @media screen and (max-width: $screen-xl) and (min-width: $screen-sm + 1px) {
+      font-size: 40/16 * 1rem;
+    }
+
+    @media screen and (max-width: $screen-sm) and (min-width: $screen-xs) {
+      font-size: 28/16 * 1rem;
+      margin-bottom: 80px;
     }
 
     span {
+      color: $strong-color;
+      display: block;
+    }
+
+    span:last-child {
       font-size: 22/16 * 1rem;
       line-height: 130%;
       letter-spacing: 0.2px;
       color: $strong-color;
+      @media screen and (max-width: $screen-sm) and (min-width: $screen-xs) {
+        font-size: 1rem;
+        margin-top: 16px;
+      }
+  
     }
   }
 
   &__advantage {
+    @media screen and (max-width: $screen-xl) {
+      max-width: 256px;
+      margin-bottom: 108px;
+    }
+
     ul {
       // list-style-type: circle;
       color: $main-title-color;
@@ -339,6 +371,10 @@ nav {
       letter-spacing: 0.2px;
       display: flex;
       align-items: center;
+      @media screen and (max-width: $screen-xl) {
+        margin-bottom: 18px;
+        align-items: flex-start;
+      }
 
       &::before {
         content: "◯";
@@ -352,13 +388,28 @@ nav {
 
   &__form {
     // position: absolute;
-    top: calc(162 / 900 * 100vh);
-    right: calc(378/1920*100vw);
+    // top: calc(162 / 900 * 100vh);
+    // right: calc(378 / 1920 * 100vw);
+    margin-left: 29px;
     box-sizing: border-box;
+    min-width: 372px;
     width: 372px;
     background: #ffffff;
     box-shadow: 0px 4px 70px rgba(58, 83, 113, 0.1);
     border-radius: 16px;
-    padding: 40px 46px
+    padding: 40px 46px;
+
+    @media screen and (max-width: $screen-xl) and (min-width: $screen-sm + 1px) {
+      position: absolute;
+      bottom: 0;
+      right: 40px;
+      align-self: flex-end;
+    }
+
+    @media screen and (max-width: $screen-sm) and (min-width: $screen-xs) {
+      position: relative;
+      margin: auto;
+    }
+
   }
 }
