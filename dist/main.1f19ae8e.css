@@ -1,0 +1,512 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/Gilroy-ExtraBold.9ee45c33.eot');
+    src: local('Gilroy ExtraBold'), local('Gilroy-ExtraBold'),
+        url('/Gilroy-ExtraBold.9ee45c33.eot?#iefix') format('embedded-opentype'),
+        url('/Gilroy-ExtraBold.71d6996c.woff') format('woff'),
+        url('/Gilroy-ExtraBold.79b7c02c.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/Gilroy-Heavy.34a6d2d7.eot');
+    src: local('Gilroy Heavy'), local('Gilroy-Heavy'),
+        url('/Gilroy-Heavy.34a6d2d7.eot?#iefix') format('embedded-opentype'),
+        url('/Gilroy-Heavy.0281355d.woff') format('woff'),
+        url('/Gilroy-Heavy.907fcdfa.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/Gilroy-LightItalic.ccfa50cf.eot');
+    src: local('Gilroy Light Italic'), local('Gilroy-LightItalic'),
+        url('/Gilroy-LightItalic.ccfa50cf.eot?#iefix') format('embedded-opentype'),
+        url('/Gilroy-LightItalic.516cb08c.woff') format('woff'),
+        url('/Gilroy-LightItalic.28195d02.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/Gilroy-ThinItalic.2cc989b8.eot');
+    src: local('Gilroy Thin Italic'), local('Gilroy-ThinItalic'),
+        url('/Gilroy-ThinItalic.2cc989b8.eot?#iefix') format('embedded-opentype'),
+        url('/Gilroy-ThinItalic.4feef925.woff') format('woff'),
+        url('/Gilroy-ThinItalic.d5067406.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/Gilroy-BlackItalic.e8636f73.eot');
+    src: local('Gilroy Black Italic'), local('Gilroy-BlackItalic'),
+        url('/Gilroy-BlackItalic.e8636f73.eot?#iefix') format('embedded-opentype'),
+        url('/Gilroy-BlackItalic.fcad3ea0.woff') format('woff'),
+        url('/Gilroy-BlackItalic.5a27c726.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/Gilroy-BoldItalic.910f2b04.eot');
+    src: local('Gilroy Bold Italic'), local('Gilroy-BoldItalic'),
+        url('/Gilroy-BoldItalic.910f2b04.eot?#iefix') format('embedded-opentype'),
+        url('/Gilroy-BoldItalic.bad7e0f1.woff') format('woff'),
+        url('/Gilroy-BoldItalic.5bfffa77.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/Gilroy-SemiBold.b0151e4f.eot');
+    src: local('Gilroy SemiBold'), local('Gilroy-SemiBold'),
+        url('/Gilroy-SemiBold.b0151e4f.eot?#iefix') format('embedded-opentype'),
+        url('/Gilroy-SemiBold.968a5360.woff') format('woff'),
+        url('/Gilroy-SemiBold.1f0a8e4d.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/Gilroy-UltraLightItalic.0a0b9640.eot');
+    src: local('Gilroy UltraLight Italic'), local('Gilroy-UltraLightItalic'),
+        url('/Gilroy-UltraLightItalic.0a0b9640.eot?#iefix') format('embedded-opentype'),
+        url('/Gilroy-UltraLightItalic.ebf36714.woff') format('woff'),
+        url('/Gilroy-UltraLightItalic.a2a78da2.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/Gilroy-SemiBoldItalic.9b6c2fcd.eot');
+    src: local('Gilroy SemiBold Italic'), local('Gilroy-SemiBoldItalic'),
+        url('/Gilroy-SemiBoldItalic.9b6c2fcd.eot?#iefix') format('embedded-opentype'),
+        url('/Gilroy-SemiBoldItalic.e43639e0.woff') format('woff'),
+        url('/Gilroy-SemiBoldItalic.e449f20c.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/Gilroy-Light.32f9761d.eot');
+    src: local('Gilroy Light'), local('Gilroy-Light'),
+        url('/Gilroy-Light.32f9761d.eot?#iefix') format('embedded-opentype'),
+        url('/Gilroy-Light.7048c954.woff') format('woff'),
+        url('/Gilroy-Light.e055a608.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/Gilroy-MediumItalic.9803b0ac.eot');
+    src: local('Gilroy Medium Italic'), local('Gilroy-MediumItalic'),
+        url('/Gilroy-MediumItalic.9803b0ac.eot?#iefix') format('embedded-opentype'),
+        url('/Gilroy-MediumItalic.5b7b6cd2.woff') format('woff'),
+        url('/Gilroy-MediumItalic.44efd43d.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/Gilroy-ExtraBoldItalic.54151821.eot');
+    src: local('Gilroy ExtraBold Italic'), local('Gilroy-ExtraBoldItalic'),
+        url('/Gilroy-ExtraBoldItalic.54151821.eot?#iefix') format('embedded-opentype'),
+        url('/Gilroy-ExtraBoldItalic.79f13e38.woff') format('woff'),
+        url('/Gilroy-ExtraBoldItalic.4a70ce5e.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/Gilroy-Regular.ef42166e.eot');
+    src: local('Gilroy Regular'), local('Gilroy-Regular'),
+        url('/Gilroy-Regular.ef42166e.eot?#iefix') format('embedded-opentype'),
+        url('/Gilroy-Regular.8953c1d8.woff') format('woff'),
+        url('/Gilroy-Regular.28a49bc3.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/Gilroy-HeavyItalic.c65a38e3.eot');
+    src: local('Gilroy Heavy Italic'), local('Gilroy-HeavyItalic'),
+        url('/Gilroy-HeavyItalic.c65a38e3.eot?#iefix') format('embedded-opentype'),
+        url('/Gilroy-HeavyItalic.46d67938.woff') format('woff'),
+        url('/Gilroy-HeavyItalic.acc3d791.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/Gilroy-Medium.320c651f.eot');
+    src: local('Gilroy Medium'), local('Gilroy-Medium'),
+        url('/Gilroy-Medium.320c651f.eot?#iefix') format('embedded-opentype'),
+        url('/Gilroy-Medium.05946324.woff') format('woff'),
+        url('/Gilroy-Medium.0d6f7f27.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/Gilroy-RegularItalic.a3851c40.eot');
+    src: local('Gilroy Regular Italic'), local('Gilroy-RegularItalic'),
+        url('/Gilroy-RegularItalic.a3851c40.eot?#iefix') format('embedded-opentype'),
+        url('/Gilroy-RegularItalic.0a9021fa.woff') format('woff'),
+        url('/Gilroy-RegularItalic.2fc94822.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/Gilroy-UltraLight.1c002462.eot');
+    src: local('Gilroy UltraLight'), local('Gilroy-UltraLight'),
+        url('/Gilroy-UltraLight.1c002462.eot?#iefix') format('embedded-opentype'),
+        url('/Gilroy-UltraLight.9cd557b5.woff') format('woff'),
+        url('/Gilroy-UltraLight.c14812d8.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/Gilroy-Bold.f136ea68.eot');
+    src: local('Gilroy Bold'), local('Gilroy-Bold'),
+        url('/Gilroy-Bold.f136ea68.eot?#iefix') format('embedded-opentype'),
+        url('/Gilroy-Bold.97914305.woff') format('woff'),
+        url('/Gilroy-Bold.38fe43cb.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/Gilroy-Thin.edf6a7b3.eot');
+    src: local('Gilroy Thin'), local('Gilroy-Thin'),
+        url('/Gilroy-Thin.edf6a7b3.eot?#iefix') format('embedded-opentype'),
+        url('/Gilroy-Thin.acfc00bf.woff') format('woff'),
+        url('/Gilroy-Thin.4f17bbab.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/Gilroy-Black.91249c0b.eot');
+    src: local('Gilroy Black'), local('Gilroy-Black'),
+        url('/Gilroy-Black.91249c0b.eot?#iefix') format('embedded-opentype'),
+        url('/Gilroy-Black.6e8c0761.woff') format('woff'),
+        url('/Gilroy-Black.764d51d6.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-family: Gilroy;
+  font-size: 16px;
+  line-height: 140%;
+  color: #7290a1;
+}
+
+body {
+  min-width: 320px;
+}
+
+.page .page__header {
+  height: 64px;
+}
+@media screen and (max-width: 1200px) {
+  .page .page__header {
+    height: 56px;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0px 4px 28px rgba(65, 109, 131, 0.05);
+}
+@media screen and (max-width: 1200px) {
+  .header {
+    justify-content: flex-start;
+    padding: 0 40px;
+    height: 56px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header {
+    padding: 0 16px;
+  }
+}
+.header__burger {
+  display: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 1200px) {
+  .header__burger {
+    display: block;
+  }
+}
+.header__logo {
+  cursor: pointer;
+}
+@media screen and (max-width: 1200px) {
+  .header__logo {
+    margin-left: 24px;
+  }
+  .header__logo svg {
+    width: 86px;
+    height: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header__logo {
+    margin-left: 16px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .header__nav {
+    display: block;
+    position: absolute;
+    top: 58px;
+    left: 0;
+    background: #ffffff;
+    box-shadow: 0px 4px 28px rgba(65, 109, 131, 0.05);
+  }
+}
+.header__download-link {
+  margin-left: 40px;
+  cursor: pointer;
+  color: #0077ff;
+}
+@media screen and (max-width: 1200px) {
+  .header__download-link {
+    margin-left: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header__download-link {
+    font-size: 0.875rem;
+  }
+}
+
+nav {
+  margin-left: 108px;
+}
+@media screen and (max-width: 1200px) {
+  nav {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    min-width: 255px;
+  }
+}
+@media screen and (max-width: 480px) {
+  nav {
+    padding-bottom: 16px;
+  }
+}
+nav__item {
+  margin-left: 40px;
+  cursor: pointer;
+}
+@media screen and (max-width: 1200px) {
+  nav__item {
+    margin-bottom: 24px;
+  }
+}
+@media screen and (max-width: 480px) {
+  nav__item {
+    margin-left: 16px;
+  }
+}
+nav__item:first-child {
+  margin-left: 0;
+}
+@media screen and (max-width: 1200px) {
+  nav__item:first-child {
+    margin-left: 40px;
+  }
+}
+@media screen and (max-width: 480px) {
+  nav__item:first-child {
+    margin-left: 16px;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.section1 {
+  background-image: url("/loon-image-original.543cd45b.jpg");
+  width: 100%;
+  min-height: calc(100vh - 64px);
+  background-size: cover;
+  background-position-x: center;
+}
+@media screen and (max-width: 1200px) and (min-width: 481px) {
+  .section1 {
+    background-image: url("/main-img-tablet.403998de.jpg");
+    background-position-x: left;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .section1 {
+    background-image: url("/loon-image-original-min.870a6f9a.jpg");
+    background-position-x: left;
+  }
+}
+
+/*# sourceMappingURL=/main.1f19ae8e.css.map */

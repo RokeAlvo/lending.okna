@@ -1,0 +1,294 @@
+@import "./fonts/Gilroy/stylesheet.css";
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+// common
+// variables
+
+// Ширины
+
+$screen-xs: 0;
+$screen-sm: 480px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+$screen-xxl: 1800px;
+
+$main-color: #7290a1;
+$accent-color: #0077ff;
+$main-bg-color: #ffffff;
+
+// styles
+html {
+  font-family: Gilroy;
+  font-size: 16px;
+  line-height: 140%;
+  color: $main-color;
+}
+
+body {
+  min-width: 320px;
+}
+
+.page {
+  .page__header {
+    height: 64px;
+
+    @media screen and (max-width: $screen-xl) {
+      height: 56px;
+    }
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $main-bg-color;
+  box-shadow: 0px 4px 28px rgba(65, 109, 131, 0.05);
+
+  @media screen and (max-width: $screen-xl) {
+    justify-content: flex-start;
+    padding: 0 40px;
+    height: 56px;
+  }
+
+  @media screen and (max-width: $screen-sm) {
+    padding: 0 16px;
+  }
+
+  &__burger {
+    display: none;
+    cursor: pointer;
+
+    @media screen and (max-width: $screen-xl) {
+      display: block;
+    }
+  }
+
+  &__logo {
+    cursor: pointer;
+
+    @media screen and (max-width: $screen-xl) {
+      margin-left: 24px;
+
+      svg {
+        width: 86px;
+        height: 20px;
+      }
+    }
+
+    @media screen and (max-width: $screen-sm) {
+      margin-left: 16px;
+    }
+  }
+
+  &__nav {
+    @media screen and (max-width: $screen-xl) {
+      display: block;
+      position: absolute;
+      top: 58px;
+      left: 0;
+      background: $main-bg-color;
+      box-shadow: 0px 4px 28px rgba(65, 109, 131, 0.05);
+    }
+  }
+
+  &__download-link {
+    margin-left: 40px;
+    cursor: pointer;
+    color: $accent-color;
+
+    @media screen and (max-width: $screen-xl) {
+      margin-left: auto;
+    }
+
+    @media screen and (max-width: $screen-sm) {
+      font-size: 14/16 * 1rem;
+    }
+  }
+}
+
+nav {
+  margin-left: 108px;
+
+  @media screen and (max-width: $screen-xl) {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    min-width: 255px;
+  }
+  @media screen and (max-width: $screen-sm) {
+    padding-bottom: 16px;
+  }
+
+  &__item {
+    margin-left: 40px;
+    cursor: pointer;
+
+    @media screen and (max-width: $screen-xl) {
+      margin-bottom: 24px;
+    }
+
+    @media screen and (max-width: $screen-sm) {
+      margin-left: 16px;
+    }
+
+    &:first-child {
+      margin-left: 0;
+
+      @media screen and (max-width: $screen-xl) {
+        margin-left: 40px;
+      }
+
+      @media screen and (max-width: $screen-sm) {
+        margin-left: 16px;
+      }
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.section1 {
+  background-image: url("./images/loon-image-original.jpg");
+  width: 100%;
+  min-height: calc(100vh - 64px);
+  background-size: cover;
+  background-position-x: center;
+
+  @media screen and (max-width: $screen-xl) and (min-width: $screen-sm + 1px) {
+    background-image: url("./images/main-img-tablet.jpg");
+    background-position-x: left;
+  }
+
+  @media screen and (max-width: $screen-sm) and (min-width: $screen-xs) {
+    background-image: url("./images/loon-image-original-min.jpg");
+    background-position-x: left;
+  }
+}
