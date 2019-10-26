@@ -688,6 +688,7 @@ nav__item:first-child {
   line-height: 120%;
   color: #2d9cdb;
   font-weight: 900;
+  text-align: center;
   margin-bottom: 64px;
 }
 @media screen and (min-width: 992px) {
@@ -705,7 +706,7 @@ nav__item:first-child {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    width: 1150px;
+    width: 992px;
   }
 }
 .section2__card {
@@ -745,6 +746,41 @@ nav__item:first-child {
   font-size: 1rem;
   line-height: 140%;
   text-align: center;
+}
+
+.section3 {
+  padding: 80px 16px;
+}
+@media screen and (min-width: 992px) {
+  .section3 {
+    padding: 120px 48px;
+  }
+}
+.section3__title {
+  font-size: 1.75rem;
+  font-weight: 900;
+  line-height: 120%;
+  text-align: center;
+  color: #45555f;
+  margin: auto;
+  margin-bottom: 24px;
+  max-width: 772px;
+}
+.section3__content {
+  max-width: 966px;
+  margin: auto;
+}
+.section3__description {
+  text-align: center;
+  color: #45555f;
+  max-width: 441px;
+  margin: 0 auto 56px;
+}
+.section3__video {
+  max-width: 100%;
+}
+.section3__video video {
+  width: 100%;
 }
 .feedback-form {
   display: flex;
