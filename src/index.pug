@@ -784,7 +784,7 @@ html(lang="ru")
                   </svg>
                 .for-someone-card__title Команда поддержки
                 .for-someone-card__description Предоставляем колл-центр, маркетологов, разработчиков и ипотечного брокера
-      section
+      section.page__section6-1
         <div class="swiper-container">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
@@ -859,14 +859,22 @@ html(lang="ru")
                     p Агентства недвижимости готовы платить за доступ к актуальной базе планировок с прайсами. Зарабатывай дополнительно от 1000 рублей в месяц за каждого подключенного риелтора.
               </div>
           </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
 
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
 
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
-        </div>
-        script(src='./main.js')
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+          </div>
+        section.page__section6-2
+          .section6-2
+            h2.section6-2__title Нет обязательных затрат на аренду офиса и оборудование рабочих мест
+            article.section6-2__article Наша технология позволяет настроить работу с менеджерами продаж в формате «домашний офис». Встречи с клиентами и сделки проводятся непосредственно на объектах и в офисе застройщика. 
+              |Отслеживать статус клиентов можно в CRM-системе даже с телефона.
+      .section6-2__img
+        .section6-2__button
+          +button('Узнать все подробности', 'main-color,raised')
+      script(src='./main.js')
