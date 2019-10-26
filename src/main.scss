@@ -535,7 +535,7 @@ nav {
   padding: 0 16px;
   margin: auto;
   margin-bottom: 80px;
-  max-width: 966px + 2*48px;
+  max-width: 966px + 2 * 48px;
   @media screen and (min-width: $screen-md) {
     padding: 0 48px;
     margin-bottom: 120px;
@@ -572,7 +572,6 @@ nav {
       max-width: 471px;
       justify-content: flex-end;
     }
-
   }
 }
 
@@ -582,7 +581,6 @@ nav {
   @media screen and (min-width: $screen-md) {
     max-width: 200px;
   }
-
 
   &__counter {
     font-size: 40/16 * 1rem;
@@ -602,4 +600,278 @@ nav {
 }
 
 .section7 {
+}
+
+.swiper-container {
+  width: 100%;
+  height: 889px;
+  @media screen and (min-width: $screen-md) {
+    width: 673px;
+    height: 672px;
+  }
+  @media screen and (min-width: $screen-xl) {
+    width: 1164px;
+    height: 570px;
+  }
+
+}
+.swiper-pagination {
+  position: absolute;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  top: 90px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: rgba(#000000, 0.1);
+
+  &::after {
+    color: #ffffff;
+    font-size: 23px;
+  }
+}
+$pagination-offset: 16px;
+.swiper-button-next {
+  right: $pagination-offset;
+  @media screen and (min-width: $screen-md) {
+    left: 272px ;
+  }
+  @media screen and (min-width: $screen-xl) {
+    left: 304px ;
+  }
+}
+
+.swiper-button-prev {
+  left: $pagination-offset;
+  @media screen and (min-width: $screen-md) {
+    left: 42px ;
+  }
+  @media screen and (min-width: $screen-xl) {
+    left: 80px ;
+  }
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  top: 529px;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ffffff;
+}
+
+.feature-card {
+  height: 889px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+  padding: 64px 16px;
+  @media screen and (min-width: $screen-md) {
+    padding: 64px 48px;
+  }
+  @media screen and (min-width: $screen-xl) {
+    padding: 64px 80px;
+  }
+
+
+
+  &__count {
+    font-size: 64px;
+    line-height: 120%;
+    font-weight: 900;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0px 4px 44px rgba(0, 0, 0, 0.15);
+    margin-bottom: 40px;
+    @media screen and (min-width: $screen-md) {
+      text-align: left;
+      padding-left: 144px - 48px;
+    }
+  
+  }
+
+  &__title {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 130%;
+    letter-spacing: 0.2px;
+    color: #3c4b53;
+    margin-bottom: 16px;
+
+    @media screen and (min-width: $screen-md) {
+      max-width: 470px;
+    }
+
+    @media screen and (min-width: $screen-xl) {
+      font-size: 32px;
+    }
+  }
+
+  &__content {
+    font-size: 16px;
+    line-height: 140%;
+    color: #3c4b53;
+
+    @media screen and (min-width: $screen-md) {
+      max-width: 350px;
+    }
+    @media screen and (min-width: $screen-xl) {
+      font-size: 18px;
+    }
+    @media screen and (min-width: $screen-xl) {
+      max-width: 490px;
+    }
+
+
+
+    p {
+      margin-bottom: 10px;
+      line-height: 140%;
+    }
+    li {
+      font-size: 16px;
+      line-height: 140%;
+      color: #3c4b53;
+      margin-bottom: 8px;
+      &::before {
+        content: "-";
+        margin-right: 10px;
+      }
+    }
+  }
+
+  &_step1 {
+    background-position: bottom -65px right -54px;
+    background-image: url("./images/feature1.png");
+    background-color: #7febb1;
+    
+    @media screen and (min-width: $screen-md) {
+      background-position-x: x-end ;
+      background-position-y: 321px;
+      }
+    @media screen and (min-width: $screen-xl) {
+      background-position: bottom 252px right -54px;
+      background-image: url("./images/feature1-xl.png");
+      }
+  }
+
+  &_step2 {
+    background-position: bottom right;
+    background-image: url("./images/step2.png");
+    background-color: #d6c4fd;
+    @media screen and (min-width: $screen-md) {
+      background-position-x: x-end ;
+      background-position-y: 321px;
+      }
+
+    @media screen and (min-width: $screen-xl) {
+      background-position-x:right ;
+      background-position-y: 0;
+      background-image: url("./images/step2-xl.png");
+      }
+
+  }
+
+  &_step3 {
+    background-position: bottom right;
+    background-image: url("./images/step3.png");
+    background-color: #f5df8e;
+    @media screen and (min-width: $screen-md) {
+      background-position-x: x-end ;
+      background-position-y: 321px;
+      }
+
+    @media screen and (min-width: $screen-xl) {
+      background-position-x:right ;
+      background-position-y: 0;
+      background-image: url("./images/step3-xl.png");
+      }
+
+  }
+
+  &_step4 {
+    background-position: bottom right;
+    background-image: url("./images/step4.png");
+    background-color: #faaf8f;
+    @media screen and (min-width: $screen-md) {
+      background-position-x: x-end ;
+      background-position-y: 321px;
+      }
+
+    @media screen and (min-width: $screen-xl) {
+      background-position-x:right ;
+      background-position-y: 0;
+      background-image: url("./images/step4-xl.png");
+      }
+
+  }
+
+  &_step5 {
+    background-position: bottom right;
+    background-image: url("./images/step5.png");
+    background-color: #8aefb9;
+    @media screen and (min-width: $screen-md) {
+      background-position-x: x-end ;
+      background-position-y: 321px;
+      }
+
+    @media screen and (min-width: $screen-xl) {
+      background-position-x:right ;
+      background-position-y: 0;
+      background-image: url("./images/step5-xl.png");
+      }
+
+  }
+
+  &_step6 {
+    background-position: bottom right;
+    background-image: url("./images/step6.png");
+    background-color: #a3d1fb;
+    @media screen and (min-width: $screen-md) {
+      background-position-x: x-end ;
+      background-position-y: 321px;
+      }
+
+    @media screen and (min-width: $screen-xl) {
+      background-position-x:right ;
+      background-position-y: 0;
+      background-image: url("./images/step6-xl.png");
+      }
+
+  }
+
+  &_step7 {
+    background-position: bottom right;
+    background-image: url("./images/step7.png");
+    background-color: #87e8e8;
+    @media screen and (min-width: $screen-md) {
+      background-position-x: x-end ;
+      background-position-y: 321px;
+      }
+
+    @media screen and (min-width: $screen-xl) {
+      background-position-x:right ;
+      background-position-y: 0;
+      background-image: url("./images/step7-xl.png");
+      }
+
+  }
+
+  &_step8 {
+    background-position: bottom right;
+    background-image: url("./images/step8.png");
+    background-color: #e4f486;
+    @media screen and (min-width: $screen-md) {
+      background-position-x: x-end ;
+      background-position-y: 321px;
+      }
+
+    @media screen and (min-width: $screen-xl) {
+      background-position-x:right ;
+      background-position-y: 0;
+      background-image: url("./images/step8-xl.png");
+      }
+
+  }
 }
