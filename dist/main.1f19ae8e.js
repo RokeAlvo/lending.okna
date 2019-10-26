@@ -194,10 +194,43 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./fonts/Gilroy/stylesheet.css":"fonts/Gilroy/stylesheet.css","./images/loon-image-original.jpg":[["loon-image-original.543cd45b.jpg","images/loon-image-original.jpg"],"images/loon-image-original.jpg"],"./images/main-img-tablet.jpg":[["main-img-tablet.403998de.jpg","images/main-img-tablet.jpg"],"images/main-img-tablet.jpg"],"./images/loon-image-original-min.jpg":[["loon-image-original-min.870a6f9a.jpg","images/loon-image-original-min.jpg"],"images/loon-image-original-min.jpg"],"_css_loader":"../../../.nvm/versions/node/v12.11.1/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"main.js":[function(require,module,exports) {
+},{"./fonts/Gilroy/stylesheet.css":"fonts/Gilroy/stylesheet.css","./images/loon-image-original.jpg":[["loon-image-original.543cd45b.jpg","images/loon-image-original.jpg"],"images/loon-image-original.jpg"],"./images/main-img-tablet.jpg":[["main-img-tablet.403998de.jpg","images/main-img-tablet.jpg"],"images/main-img-tablet.jpg"],"./images/loon-image-original-min.jpg":[["loon-image-original-min.870a6f9a.jpg","images/loon-image-original-min.jpg"],"images/loon-image-original-min.jpg"],"_css_loader":"../../../.nvm/versions/node/v12.11.1/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"blocks/feedback-form/feedback-form.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../../../.nvm/versions/node/v12.11.1/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"blocks/input-text/input-text.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../../../.nvm/versions/node/v12.11.1/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"blocks/input-text/input-text.js":[function(require,module,exports) {
+"use strict";
+
+require("./input-text.scss");
+},{"./input-text.scss":"blocks/input-text/input-text.scss"}],"blocks/button/button.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../../../.nvm/versions/node/v12.11.1/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"blocks/button/button.js":[function(require,module,exports) {
+"use strict";
+
+require("./button.scss");
+},{"./button.scss":"blocks/button/button.scss"}],"blocks/feedback-form/feedback-form.js":[function(require,module,exports) {
+"use strict";
+
+require("./feedback-form.scss");
+
+require("./../input-text/input-text");
+
+require("./../button/button");
+},{"./feedback-form.scss":"blocks/feedback-form/feedback-form.scss","./../input-text/input-text":"blocks/input-text/input-text.js","./../button/button":"blocks/button/button.js"}],"main.js":[function(require,module,exports) {
 "use strict";
 
 require("./main.scss");
+
+require("./blocks/feedback-form/feedback-form");
 
 (function main() {
   var burger = document.querySelector('.header__burger');
@@ -211,7 +244,7 @@ require("./main.scss");
     nav.classList.toggle('hidden');
   });
 })();
-},{"./main.scss":"main.scss"}],"../../../.nvm/versions/node/v12.11.1/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./main.scss":"main.scss","./blocks/feedback-form/feedback-form":"blocks/feedback-form/feedback-form.js"}],"../../../.nvm/versions/node/v12.11.1/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -239,7 +272,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40231" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "41631" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

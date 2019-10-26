@@ -1,0 +1,19 @@
+include ./../button/button.pug
+include ./../input-text/input-text.pug
+
+mixin feedback-form(name)
+  form.feedback-form
+    .feedback-form__input-wrap
+      h3.feedback-form__input-title Получи презентацию франшизы и детальный бизнес-план
+      p.feedback-form__description Оставь номер телефона, на который мы отправим все детали франшизы
+      .feedback-form__input-phone
+        +input-text('tel', '+7 (___) ___-__-__', '', 'Телефон')
+    .feedback-form__button
+      +button('Получить презентацию', 'main-color,raised')
+    .feedback-form__policy 
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="0.5" y="0.5" width="13" height="13" rx="1.5" fill="#FAFAFA" stroke="#E4E3EB"/>
+      <path d="M3 7L6 10L11 4" stroke="#2D9CDB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      |Согласие 
+      i Политикой конфиденциальности

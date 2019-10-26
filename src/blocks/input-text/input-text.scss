@@ -1,0 +1,61 @@
+// @import "./../../includes/variables.scss";
+$text-color:  #45555F;
+$placeholder-color: #C1C5CC;
+$border-color: #E4E3EB;
+$hover-border-color: #CBC9D9;
+$border-radius: 8px;
+$title-color: #2D9CDB;
+
+.input-text {
+
+  &__input {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 1px;
+
+    width:100%;
+    border: 0;
+    padding: 0;
+    margin: 12/14 * 1em 15/14 * 1em 12/14 * 1em 15/14 * 1em;
+    box-sizing: border-box;
+    color: $text-color;
+    background: inherit;
+
+    &::placeholder{
+      color: $placeholder-color
+    }
+
+    &:hover,
+    &:focus {
+      // color: $color-Dark75;
+    }
+  }
+
+  &__wrap {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: inherit;
+    border: 1px solid $border-color;
+    box-shadow: inset 0px 0px 4px rgba(90, 88, 99, 0.15);
+    border-radius: $border-radius;
+    box-sizing: border-box;
+    &:hover, &:focus, &:active {
+      border-color: $hover-border-color;
+    }
+  }
+
+  &__title {
+    display: inline-block;
+    position: relative;
+    top: 7px;
+    left: 16px;
+    background: #ffffff;
+    color: $title-color;
+    padding: 0 5px;
+  }
+}

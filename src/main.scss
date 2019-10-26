@@ -1,4 +1,5 @@
 @import "./fonts/Gilroy/stylesheet.css";
+@import "./blocks/feedback-form/feedback-form.scss";
 
 html,
 body,
@@ -138,7 +139,9 @@ $screen-xl: 1200px;
 $screen-xxl: 1800px;
 
 $main-color: #7290a1;
+$main-title-color: #45555f;
 $accent-color: #0077ff;
+$strong-color: #2d9cdb;
 $main-bg-color: #ffffff;
 
 // styles
@@ -276,11 +279,16 @@ nav {
 }
 
 .section1 {
+  position: relative;
   background-image: url("./images/loon-image-original.jpg");
   width: 100%;
   min-height: calc(100vh - 64px);
   background-size: cover;
   background-position-x: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: calc(162/900*100vh);
 
   @media screen and (max-width: $screen-xl) and (min-width: $screen-sm + 1px) {
     background-image: url("./images/main-img-tablet.jpg");
@@ -290,5 +298,67 @@ nav {
   @media screen and (max-width: $screen-sm) and (min-width: $screen-xs) {
     background-image: url("./images/loon-image-original-min.jpg");
     background-position-x: left;
+  }
+
+  &__promo {
+    max-width: 763px;
+    // position: absolute;
+    left: calc(378 / 1920 * 100vw);
+    top: calc(162 / 900 * 100vh);
+  }
+
+  &__title {
+    font-size: 48/16 * 1rem;
+    line-height: 120%;
+    letter-spacing: 0.2px;
+    color: $main-title-color;
+    font-weight: bold;
+    margin-bottom: 121px;
+
+    strong {
+      color: $strong-color;
+    }
+
+    span {
+      font-size: 22/16 * 1rem;
+      line-height: 130%;
+      letter-spacing: 0.2px;
+      color: $strong-color;
+    }
+  }
+
+  &__advantage {
+    ul {
+      // list-style-type: circle;
+      color: $main-title-color;
+    }
+    li {
+      font-weight: 600;
+      font-size: 18/16 * 1rem;
+      line-height: 140%;
+      letter-spacing: 0.2px;
+      display: flex;
+      align-items: center;
+
+      &::before {
+        content: "◯";
+        font-size: 10/16 * 1rem;
+        color: $strong-color;
+        padding-right: 12px;
+        font-weight: 900;
+      }
+    }
+  }
+
+  &__form {
+    // position: absolute;
+    top: calc(162 / 900 * 100vh);
+    right: calc(378/1920*100vw);
+    box-sizing: border-box;
+    width: 372px;
+    background: #ffffff;
+    box-shadow: 0px 4px 70px rgba(58, 83, 113, 0.1);
+    border-radius: 16px;
+    padding: 40px 46px
   }
 }

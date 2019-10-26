@@ -1,4 +1,5 @@
 
+include blocks/feedback-form/feedback-form.pug
 <!DOCTYPE html>
 html(lang="ru")
     head
@@ -60,12 +61,18 @@ html(lang="ru")
       section.page__section1
         .section1
           .section1__promo
-            h2.section1__title Открой своё агентство и зарабатывай
-              strong от 250 000 ₽ 
-              |в месяц на рынке новостроек
+            h2.section1__title Открой своё агентство <br>
+              |и зарабатывай 
+              strong от 250 000 ₽ <br>
+              strong в месяц 
+              | на рынке новостроек 
+              span по франшизе онлайн-сервиса okna.io
             article.section1__advantage
               ul
                 li не обязательно открывать свой офис
                 li для старта хватит команды из нескольких менеджеров
                 li не нужно ломать голову над поиском клиентов
+          .section1__form
+            +feedback-form()
+
       script(src='./main.js')

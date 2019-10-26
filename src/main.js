@@ -1,4 +1,5 @@
 import './main.scss';
+import './blocks/feedback-form/feedback-form'
 
 (function main(){
   const burger = document.querySelector('.header__burger');
