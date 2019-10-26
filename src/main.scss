@@ -496,9 +496,8 @@ nav {
 .section3 {
   padding: 80px 16px;
   @media screen and (min-width: $screen-lg) {
-    padding:120px 48px;
+    padding: 120px 48px;
   }
-
 
   &__title {
     font-size: 28/16 * 1rem;
@@ -533,6 +532,67 @@ nav {
 }
 
 .section4 {
+  padding: 0 16px;
+  margin: auto;
+  margin-bottom: 80px;
+  max-width: 966px + 2*48px;
+  @media screen and (min-width: $screen-md) {
+    padding: 0 48px;
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: 22/16 * 1rem;
+    line-height: 130%;
+    letter-spacing: 0.2px;
+    font-weight: bold;
+    color: $main-title-color;
+    margin-bottom: 24px;
+    max-width: 772px;
+  }
+
+  &__content {
+    margin-bottom: 56px;
+  }
+
+  &__description {
+    line-height: 140%;
+    @media screen and (min-width: $screen-md) {
+      max-width: 471px;
+    }
+  }
+
+  &__counters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @media screen and (min-width: $screen-md) {
+      max-width: 471px;
+      justify-content: flex-end;
+    }
+
+  }
+}
+
+.counter-card {
+  max-width: 168px;
+  margin-bottom: 38px;
+  @media screen and (min-width: $screen-md) {
+    max-width: 200px;
+  }
+
+
+  &__counter {
+    font-size: 40/16 * 1rem;
+    color: $main-title-color;
+    font-weight: 900;
+  }
+
+  &__description {
+    line-height: 140%;
+  }
 }
 
 .section5 {

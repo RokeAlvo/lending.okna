@@ -782,6 +782,70 @@ nav__item:first-child {
 .section3__video video {
   width: 100%;
 }
+
+.section4 {
+  padding: 0 16px;
+  margin: auto;
+  margin-bottom: 80px;
+  max-width: 1062px;
+}
+@media screen and (min-width: 768px) {
+  .section4 {
+    padding: 0 48px;
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.section4__title {
+  font-size: 1.375rem;
+  line-height: 130%;
+  letter-spacing: 0.2px;
+  font-weight: bold;
+  color: #45555f;
+  margin-bottom: 24px;
+  max-width: 772px;
+}
+.section4__content {
+  margin-bottom: 56px;
+}
+.section4__description {
+  line-height: 140%;
+}
+@media screen and (min-width: 768px) {
+  .section4__description {
+    max-width: 471px;
+  }
+}
+.section4__counters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .section4__counters {
+    max-width: 471px;
+    justify-content: flex-end;
+  }
+}
+
+.counter-card {
+  max-width: 168px;
+  margin-bottom: 38px;
+}
+@media screen and (min-width: 768px) {
+  .counter-card {
+    max-width: 200px;
+  }
+}
+.counter-card__counter {
+  font-size: 2.5rem;
+  color: #45555f;
+  font-weight: 900;
+}
+.counter-card__description {
+  line-height: 140%;
+}
 .feedback-form {
   display: flex;
   flex-direction: column;
