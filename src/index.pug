@@ -877,7 +877,7 @@ html(lang="ru")
       .section6-2__img
         .section6-2__button
           +button('Узнать все подробности', 'main-color,raised')
-      section.section7
+      section.page__section7
         .section7
           h2.section7__title Финансовые условия
           article.section7__article
@@ -944,12 +944,14 @@ html(lang="ru")
                       li.condition__item техническую, юридическую поддержку и добрый совет.
             .section7__condition
               .condition-card
-                .condition-card__title-wrap
-                  h3.condition-card__title Первоначальные инвестиции
-                p.condition-card__promo от 150 000 ₽ в месяц*
-                p.condition-card__description * если ты не открываешь офис на первых порах, то инвестировать нужно будет только в рекламу
-                .condition-card__title-wrap.add-margin-top40
-                  h3.condition-card__title Выход на окупаемость
-                p.condition-card__promo 3–6 месяцев*
-                p.condition-card__description * зависит от индивидуальных характеристик города и выбранного формата работы
+                .column
+                  .condition-card__title-wrap
+                    h3.condition-card__title Первоначальные инвестиции
+                  p.condition-card__promo от 150 000 ₽ в месяц*
+                  p.condition-card__description * если ты не открываешь офис на первых порах, то инвестировать нужно будет только в рекламу
+                .column
+                  .condition-card__title-wrap.add-margin-top40
+                    h3.condition-card__title Выход на окупаемость
+                  p.condition-card__promo 3–6 месяцев*
+                  p.condition-card__description * зависит от индивидуальных характеристик города и выбранного формата работы
       script(src='./main.js')

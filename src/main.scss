@@ -662,6 +662,51 @@ nav {
 .section7 {
   background: $second-bg-color;
   padding-top: 80px;
+  // max-width: 1169px;
+
+  @media screen and (min-width: $screen-md) {
+    padding: 120px 48px;
+  }
+
+  &__article {
+    display: flex;
+    flex-wrap: wrap;
+    @media screen and (min-width: $screen-xl) {
+      max-width: 2*574px + 16px;
+      justify-content: space-between;
+      margin: auto;
+    }  
+
+  }
+
+  &__condition {
+    width: 100%;
+    @media screen and (min-width: $screen-xl) {
+      max-width: 574px;
+    }  
+
+    &:last-child {
+      @media screen and (min-width: $screen-xl) {
+        max-width: 100%;
+
+        .condition-card{
+          width: 100%;
+          padding: 56px 40px;
+          display: flex;
+          justify-content: space-between; 
+          align-items: flex-start;
+          
+          &__title-wrap {
+            margin-top: 0;
+          }
+
+          .column {
+            max-width: 544px;
+          }
+        }
+      }  
+    }
+  }
 
   &__title {
     font-size: 28px;
@@ -677,6 +722,11 @@ nav {
   border-radius: 16px;
   padding: 40px 16px;
   margin-bottom: 16px;
+
+  @media screen and (min-width: $screen-md) {
+    padding: 59px 40px;
+  }
+
 
   &__title-wrap {
     display: flex;
@@ -711,6 +761,10 @@ nav {
     font-weight: 900;
     color: $main-title-color;
     margin-bottom: 8px;
+    
+    @media screen and (min-width: $screen-md) {
+      font-size: 40/16*1rem;
+    }  
   }
 
   &__description {
@@ -718,6 +772,10 @@ nav {
     line-height: 140%;
     color: $main-color;
     margin-bottom: 24px;
+
+    @media screen and (min-width: $screen-md) {
+      font-size: 1rem;
+    }  
   }
 
   &__separator {
