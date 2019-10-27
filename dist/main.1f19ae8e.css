@@ -436,6 +436,11 @@ body {
 .page__section6-1 {
   background: linear-gradient(180deg, rgba(245, 245, 250, 0) 0%, #f5f5fa 100%);
 }
+.page__section9 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .header {
   width: 100%;
@@ -1165,7 +1170,7 @@ nav__item:first-child {
   padding: 0 16px;
 }
 .section8__accordion-wrapper .line {
-  background-color: #E2EDF9;
+  background-color: #e2edf9;
   min-height: 100%;
   min-width: 2px;
   width: 4px;
@@ -1586,6 +1591,118 @@ nav__item:first-child {
     background-position-y: 0;
     background-image: url("/step8-xl.b8a995bf.png");
   }
+}
+
+.section9 {
+  padding: 80px 16px;
+}
+@media screen and (min-width: 768px) {
+  .section9 {
+    padding: 120px 48px;
+  }
+}
+.section9__title {
+  font-size: 1.75rem;
+  font-weight: 900;
+  line-height: 120%;
+  color: #2d9cdb;
+  margin-bottom: 64px;
+}
+@media screen and (min-width: 1200px) {
+  .section9__reviews {
+    display: flex;
+    max-width: 1156px;
+    justify-content: space-between;
+  }
+}
+
+.review-card {
+  background: linear-gradient(0deg, #f5f5fa, #f5f5fa), #ffffff;
+  border-radius: 16px;
+  padding: 23px 16px 48px 16px;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 1200px) {
+  .review-card {
+    max-width: 570px;
+  }
+}
+.review-card__user-info {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .review-card__user-info {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+.review-card__avatar {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 24px;
+}
+.review-card:nth-child(1) .review-card__avatar {
+  background: url("/vladimir-img.5de7ae9d.png");
+}
+.review-card:nth-child(2) .review-card__avatar {
+  background: url("/Mask Group.608f44f3.png");
+}
+.review-card__user {
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 768px) {
+  .review-card__user {
+    margin-left: 40px;
+  }
+}
+.review-card__user-name {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 130%;
+  letter-spacing: 0.2px;
+  color: #45555f;
+  margin-bottom: 8px;
+}
+.review-card__user-city {
+  font-size: 1.125rem;
+  line-height: 130%;
+  letter-spacing: 0.2px;
+  color: #7290a1;
+}
+.review-card__review {
+  line-height: 140%;
+  color: #45555f;
+}
+
+.section10 {
+  padding: 0 16px;
+}
+.section10__title {
+  font-size: 1.75rem;
+  font-weight: 900;
+  line-height: 120%;
+  color: #2d9cdb;
+  margin-bottom: 64px;
+}
+.section10__row {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-bottom: 40px;
+}
+.section10__years {
+  color: #45555f;
+  font-weight: bold;
+  padding-top: 12px;
+}
+.section10__circles {
+  margin-left: 16px;
+}
+.section10__description {
+  margin-left: 16px;
+  font-size: 14px;
+  line-height: 140%;
+  color: #45555f;
 }
 .feedback-form {
   display: flex;
