@@ -1452,6 +1452,9 @@ $pagination-offset: 16px;
 
 .section10 {
   padding: 0 16px;
+  @media screen and (min-width: $screen-md) {
+    padding: 0 48px 80px 48px;
+  }
 
   &__title {
     font-size: 28/16 * 1rem;
@@ -1459,34 +1462,126 @@ $pagination-offset: 16px;
     line-height: 120%;
     color: $strong-color;
     margin-bottom: 64px;
+    @media screen and (min-width: $screen-md) {
+      margin-bottom: 80px;
+      font-size: 40/16 * 1rem;
+    }
+    @media screen and (min-width: $screen-xl) {
+      max-width: 1156px;
+      margin: 0 auto 80px auto;
+    }
+  
   }
 
   &__content {
+    position: relative;
     // display: flex;
     // flex-direction: row;
+
+    @media screen and (min-width: $screen-xl) {
+      display: flex;
+      justify-content: space-between;
+      flex-flow: row nowrap;
+      max-width: 1156px;
+      margin: auto;
+
+      &::before {
+        content: "";
+        width: 100%;
+        height: 8px;
+        position: absolute;
+        top: 62px;
+        background: linear-gradient(90deg, #E2EDF9 0%, #E2EDF9 69.71%, rgba(226, 237, 249, 0.111999) 83.48%, rgba(226, 237, 249, 0) 100%);
+      }
+    }
+
   }
 
-  &__row{
+  &__row {
+    position: relative;
     display: flex;
     flex-flow: row nowrap;
-    margin-bottom: 40px;
+    padding-bottom: 40px;
+
+    @media screen and (min-width: $screen-xl) {
+      flex-direction: column;
+    }
+
+
+    &::before {
+      z-index: -1;
+      content: "";
+      width: 8px;
+      height: 100%;
+      position: absolute;
+      left: 65px;
+      background: linear-gradient(
+        90deg,
+        #e2edf9 0%,
+        #e2edf9 69.71%,
+        rgba(226, 237, 249, 0.111999) 83.48%,
+        rgba(226, 237, 249, 0) 100%
+      );
+      @media screen and (min-width: $screen-md) {
+        left: 94px;
+      }
+
+      @media screen and (min-width: $screen-xl) {
+        display: none;
+      }
+    }
+
+    &:last-child {
+      &::before {
+        display: none;
+      }
+    }
   }
 
   &__years {
     color: $main-title-color;
     font-weight: bold;
     padding-top: 12px;
+    @media screen and (min-width: $screen-md) {
+      font-size: 18/16 * 1rem;
+    }
+
+    @media screen and (min-width: $screen-xl) {
+      margin-bottom: 16px;
+    }
+
   }
 
   &__circles {
     margin-left: 16px;
+    @media screen and (min-width: $screen-md) {
+      margin-left: 40px;
+    }
+    @media screen and (min-width: $screen-xl) {
+      margin-left: 0;
+      margin-bottom: 16px;
+    }
   }
 
   &__description {
     margin-left: 16px;
     font-size: 14px;
-line-height: 140%;
-color: $main-title-color;
+    line-height: 140%;
+    color: $main-title-color;
+
+    b {
+      font-weight: bold;
+    }
+
+    @media screen and (min-width: $screen-md) {
+      font-size: 1rem;
+      margin-left: 52px;
+    }
+
+    @media screen and (min-width: $screen-xl) {
+      margin-left: 0;
+      max-width: 292px;
+    }
   }
 
   .item {
