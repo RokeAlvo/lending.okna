@@ -16,9 +16,14 @@ mixin input-text(type, placeholder, mods, title)
         allMods = allMods + ' input-text--' + modsList[i].trim();
       }
     }
+    if(type==='tel'){
+      var pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+      var minlength="18"; 
+      var maxlength="18";
+    }
 
   .input-text(class=allMods)&attributes(attributes)
     .input-text__title=title
     .input-text__wrap
-      input(type=type, placeholder=placeholder).input-text__input
+      input(type=type, placeholder=placeholder ).input-text__input
       block
