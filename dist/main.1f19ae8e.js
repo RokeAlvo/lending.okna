@@ -199,7 +199,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./fonts/Gilroy/stylesheet.css":"fonts/Gilroy/stylesheet.css","./images/loon-image-original.jpg":[["loon-image-original.543cd45b.jpg","images/loon-image-original.jpg"],"images/loon-image-original.jpg"],"./images/main-img-tablet.jpg":[["main-img-tablet.403998de.jpg","images/main-img-tablet.jpg"],"images/main-img-tablet.jpg"],"./images/loon-image-original-min.jpg":[["loon-image-original-min.870a6f9a.jpg","images/loon-image-original-min.jpg"],"images/loon-image-original-min.jpg"],"./images/divide-img-phone.jpg":[["divide-img-phone.9ea9099a.jpg","images/divide-img-phone.jpg"],"images/divide-img-phone.jpg"],"./images/divide-img-tablet.jpg":[["divide-img-tablet.8f698bd0.jpg","images/divide-img-tablet.jpg"],"images/divide-img-tablet.jpg"],"./images/divide-img-desktop.jpg":[["divide-img-desktop.2a7125f9.jpg","images/divide-img-desktop.jpg"],"images/divide-img-desktop.jpg"],"./images/plane-img.png":[["plane-img.d5778831.png","images/plane-img.png"],"images/plane-img.png"],"./images/divider.svg":[["divider.1c43e1cc.svg","images/divider.svg"],"images/divider.svg"],"./images/divider (1).svg":[["divider (1).193da7c6.svg","images/divider (1).svg"],"images/divider (1).svg"],"./images/feature1.png":[["feature1.2bb40830.png","images/feature1.png"],"images/feature1.png"],"./images/feature1-xl.png":[["feature1-xl.59423c22.png","images/feature1-xl.png"],"images/feature1-xl.png"],"./images/step2.png":[["step2.d160f892.png","images/step2.png"],"images/step2.png"],"./images/step2-xl.png":[["step2-xl.a0fe818d.png","images/step2-xl.png"],"images/step2-xl.png"],"./images/step3.png":[["step3.a224be98.png","images/step3.png"],"images/step3.png"],"./images/step3-xl.png":[["step3-xl.881b365d.png","images/step3-xl.png"],"images/step3-xl.png"],"./images/step4.png":[["step4.c36a0377.png","images/step4.png"],"images/step4.png"],"./images/step4-xl.png":[["step4-xl.8749722a.png","images/step4-xl.png"],"images/step4-xl.png"],"./images/step5.png":[["step5.33769a55.png","images/step5.png"],"images/step5.png"],"./images/step5-xl.png":[["step5-xl.a19e178b.png","images/step5-xl.png"],"images/step5-xl.png"],"./images/step6.png":[["step6.f66e8e32.png","images/step6.png"],"images/step6.png"],"./images/step6-xl.png":[["step6-xl.b14a9674.png","images/step6-xl.png"],"images/step6-xl.png"],"./images/step7.png":[["step7.e66fec8f.png","images/step7.png"],"images/step7.png"],"./images/step7-xl.png":[["step7-xl.d50a4f68.png","images/step7-xl.png"],"images/step7-xl.png"],"./images/step8.png":[["step8.2e6cf62a.png","images/step8.png"],"images/step8.png"],"./images/step8-xl.png":[["step8-xl.b8a995bf.png","images/step8-xl.png"],"images/step8-xl.png"],"./images/vladimir-img.png":[["vladimir-img.5de7ae9d.png","images/vladimir-img.png"],"images/vladimir-img.png"],"./images/Mask Group.png":[["Mask Group.608f44f3.png","images/Mask Group.png"],"images/Mask Group.png"],"_css_loader":"../../../.nvm/versions/node/v12.11.1/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"blocks/feedback-form/feedback-form.scss":[function(require,module,exports) {
+},{"./fonts/Gilroy/stylesheet.css":"fonts/Gilroy/stylesheet.css","./images/loon-image-original.jpg":[["loon-image-original.543cd45b.jpg","images/loon-image-original.jpg"],"images/loon-image-original.jpg"],"./images/main-img-tablet.jpg":[["main-img-tablet.403998de.jpg","images/main-img-tablet.jpg"],"images/main-img-tablet.jpg"],"./images/loon-image-original-min.jpg":[["loon-image-original-min.870a6f9a.jpg","images/loon-image-original-min.jpg"],"images/loon-image-original-min.jpg"],"./images/divide-img-phone.jpg":[["divide-img-phone.9ea9099a.jpg","images/divide-img-phone.jpg"],"images/divide-img-phone.jpg"],"./images/divide-img-tablet.jpg":[["divide-img-tablet.8f698bd0.jpg","images/divide-img-tablet.jpg"],"images/divide-img-tablet.jpg"],"./images/divide-img-desktop.jpg":[["divide-img-desktop.2a7125f9.jpg","images/divide-img-desktop.jpg"],"images/divide-img-desktop.jpg"],"./images/plane-img.png":[["plane-img.d5778831.png","images/plane-img.png"],"images/plane-img.png"],"./images/divider.svg":[["divider.1c43e1cc.svg","images/divider.svg"],"images/divider.svg"],"./images/divider (1).svg":[["divider (1).193da7c6.svg","images/divider (1).svg"],"images/divider (1).svg"],"./images/feature1.png":[["feature1.2bb40830.png","images/feature1.png"],"images/feature1.png"],"./images/feature1-xl.png":[["feature1-xl.59423c22.png","images/feature1-xl.png"],"images/feature1-xl.png"],"./images/step2.png":[["step2.d160f892.png","images/step2.png"],"images/step2.png"],"./images/step2-xl.png":[["step2-xl.a0fe818d.png","images/step2-xl.png"],"images/step2-xl.png"],"./images/step3.png":[["step3.a224be98.png","images/step3.png"],"images/step3.png"],"./images/step3-xl.png":[["step3-xl.881b365d.png","images/step3-xl.png"],"images/step3-xl.png"],"./images/step4.png":[["step4.c36a0377.png","images/step4.png"],"images/step4.png"],"./images/step4-xl.png":[["step4-xl.8749722a.png","images/step4-xl.png"],"images/step4-xl.png"],"./images/step5.png":[["step5.33769a55.png","images/step5.png"],"images/step5.png"],"./images/step5-xl.png":[["step5-xl.a19e178b.png","images/step5-xl.png"],"images/step5-xl.png"],"./images/step6.png":[["step6.f66e8e32.png","images/step6.png"],"images/step6.png"],"./images/step6-xl.png":[["step6-xl.b14a9674.png","images/step6-xl.png"],"images/step6-xl.png"],"./images/step7.png":[["step7.e66fec8f.png","images/step7.png"],"images/step7.png"],"./images/step7-xl.png":[["step7-xl.d50a4f68.png","images/step7-xl.png"],"images/step7-xl.png"],"./images/step8.png":[["step8.2e6cf62a.png","images/step8.png"],"images/step8.png"],"./images/step8-xl.png":[["step8-xl.b8a995bf.png","images/step8-xl.png"],"images/step8-xl.png"],"./images/vladimir-img.png":[["vladimir-img.5de7ae9d.png","images/vladimir-img.png"],"images/vladimir-img.png"],"./images/Mask Group.png":[["Mask Group.608f44f3.png","images/Mask Group.png"],"images/Mask Group.png"],"./images/last-img-phone.jpg":[["last-img-phone.baf3bd3d.jpg","images/last-img-phone.jpg"],"images/last-img-phone.jpg"],"./images/last-img-desktop.jpg":[["last-img-desktop.1e84362a.jpg","images/last-img-desktop.jpg"],"images/last-img-desktop.jpg"],"./images/divider-top.svg":[["divider-top.c4a31b11.svg","images/divider-top.svg"],"images/divider-top.svg"],"_css_loader":"../../../.nvm/versions/node/v12.11.1/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"blocks/feedback-form/feedback-form.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -231,16 +231,46 @@ require("./../input-text/input-text");
 
 require("./../button/button");
 
+var API = '';
+var PRESENTATION_URL = 'http://example.com/a.txt';
+
 (function () {
   var forms = document.querySelectorAll('.feedback-form');
   Array.from(forms).forEach(function (form) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
-      var input = e.target.querySelector('input');
-      console.log('телефон', input.value);
+      var thanksForms = document.querySelectorAll('.feedback-form__thanks');
+      Array.from(thanksForms).forEach(function (thanksForm) {
+        thanksForm.classList.toggle('hidden');
+      });
+      Array.from(forms).forEach(function (form) {
+        form.classList.toggle('feedback-form_hidden');
+      });
+      var phone = e.target.querySelector('input[type=tel]').value;
+      var cityInput = e.target.querySelector('input[type=city]');
+      var city = cityInput ? cityInput.value : '';
+      console.log('телефон', phone);
+      console.log('city', city);
+      downloadFile(PRESENTATION_URL, name = 'okna');
     });
   });
 })();
+
+function downloadFile(url) {
+  var name = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'file';
+  var type = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 'text/plain';
+  // const { createElement } = document
+  // const { URL: { createObjectURL, revokeObjectURL }, setTimeout } = window
+  // const blob = new Blob([data], { type })
+  // const url = createObjectURL(blob)
+  var anchor = createElement('a');
+  anchor.setAttribute('href', url);
+  anchor.setAttribute('download', name);
+  anchor.click();
+  setTimeout(function () {
+    revokeObjectURL(url);
+  }, 100);
+}
 },{"./feedback-form.scss":"blocks/feedback-form/feedback-form.scss","./../input-text/input-text":"blocks/input-text/input-text.js","./../button/button":"blocks/button/button.js"}],"../node_modules/ssr-window/dist/ssr-window.esm.js":[function(require,module,exports) {
 "use strict";
 
@@ -10432,7 +10462,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36941" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38601" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

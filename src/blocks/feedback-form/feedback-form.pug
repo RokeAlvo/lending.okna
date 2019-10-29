@@ -2,7 +2,18 @@ include ./../button/button.pug
 include ./../input-text/input-text.pug
 
 mixin feedback-form(name)
-  form.feedback-form
+  .feedback-form__thanks.hidden 
+    h3 Спасибо за заявку!
+    p Менеджер свяжется с тобой в рабочее время, а пока ты можешь скачать и посмотреть презентацию
+    //- +button('', 'secondary-color,raised')
+    //-   .button__text
+    //-     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    //-     <path d="M15.2737 9.36625C15.1657 9.1425 14.9284 9 14.6671 9H12.0004V0.625C12.0004 0.28 11.7017 0 11.3337 0H8.66707C8.29907 0 8.00041 0.28 8.00041 0.625V9H5.33374C5.07241 9 4.83507 9.14375 4.72707 9.36625C4.61774 9.59 4.66041 9.85125 4.83241 10.0363L9.49907 14.7863C9.62574 14.9225 9.80841 15 10.0004 15C10.1924 15 10.3751 14.9213 10.5017 14.7863L15.1684 10.0363C15.3417 9.8525 15.3817 9.59 15.2737 9.36625Z" fill="white"/>
+    //-     <path d="M18 14V18H2V14H0V18.75C0 19.4412 0.597333 20 1.33333 20H18.6667C19.404 20 20 19.4412 20 18.75V14H18Z" fill="white"/>
+    //-     </svg>
+    //-     .button-text Скачать с Яндекс.Диска
+
+  form.feedback-form.feedback-form
     .feedback-form__input-wrap
       h3.feedback-form__input-title Получи презентацию франшизы и детальный бизнес-план
       p.feedback-form__description Оставь номер телефона, на который мы отправим все детали франшизы

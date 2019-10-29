@@ -1,5 +1,8 @@
 
 include blocks/feedback-form/feedback-form.pug
+include blocks/button/button.pug
+include blocks/input-text/input-text.pug
+
 <!DOCTYPE html>
 html(lang="ru")
     head
@@ -51,12 +54,18 @@ html(lang="ru")
             </svg>
           .header__nav
             nav
-              nav__item О сервисе
-              nav__item Особенности
-              nav__item Преимущества
-              nav__item Условия
-              nav__item Этапы открытия
-              nav__item Отзывы
+              nav__item 
+                a(href="#") О сервисе
+              nav__item 
+                a(href="#page__section5") Особенности
+              nav__item 
+                a(href="#") Преимущества
+              nav__item 
+                a(href="#") Условия
+              nav__item 
+                a(href="#") Этапы открытия
+              nav__item 
+                a(href="#") Отзывы
           .header__download-link Скачать презентацию
       section.page__section1
         .section1
@@ -413,7 +422,7 @@ html(lang="ru")
             .counter-card
               .counter-card__counter 123
               .counter-card__description сделки в месяц заключается через нас
-      section.page__section5
+      section.page__section5(id="page__section5")
         .section2
           h2.section2__title Особенности франшизы
           article.section2__content
@@ -1066,4 +1075,103 @@ html(lang="ru")
                 <circle cx="20" cy="20" r="18" fill="white" stroke="#6FCF97" stroke-width="4"/>
                 </svg>
               p.section10__description  Собрали весь наш опыт, учли все ошибки <b>и открываем продажи нашей франшизы ещё в 25 городах России.</b> Если видишь нашу рекламу — у тебя ещё есть возможность успеть.
+      section.page__section11
+        .section11
+          .section11__top-image
+          h3.section11__slogan-little Один город — один эксклюзивный партнёр
+          h2.section11__slogan-big Второго шанса не будет
+          .section11__content-wrap
+            article.section11__content
+              .section11__description Если интересно — оставь заявку и узнай все подробности, прежде чем принимать решение
+              .section11__advantages-list
+                ul
+                  li.section11__advantage
+                    .section11__advantage-icon
+                      <svg width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M20.9932 0.613287C21.5581 1.11136 21.6123 1.97307 21.1142 2.53796L9.09072 16.1743C8.8442 16.4539 8.49397 16.6204 8.1215 16.6351C7.74904 16.6497 7.38681 16.5113 7.11908 16.2519L0.960724 10.286C0.419806 9.76197 0.406103 8.89867 0.930117 8.35776C1.45413 7.81684 2.31743 7.80314 2.85835 8.32715L7.99024 13.2987L19.0685 0.734266C19.5666 0.169375 20.4283 0.11521 20.9932 0.613287Z" fill="#2D9CDB"/>
+                      </svg>
+                    p.section11__advantage-text Подробная презентация и пошаговый план открытия
+                  li.section11__advantage
+                    .section11__advantage-icon
+                      <svg width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M20.9932 0.613287C21.5581 1.11136 21.6123 1.97307 21.1142 2.53796L9.09072 16.1743C8.8442 16.4539 8.49397 16.6204 8.1215 16.6351C7.74904 16.6497 7.38681 16.5113 7.11908 16.2519L0.960724 10.286C0.419806 9.76197 0.406103 8.89867 0.930117 8.35776C1.45413 7.81684 2.31743 7.80314 2.85835 8.32715L7.99024 13.2987L19.0685 0.734266C19.5666 0.169375 20.4283 0.11521 20.9932 0.613287Z" fill="#2D9CDB"/>
+                      </svg>
+                    p.section11__advantage-text Расчёт стоимости открытия франшизы в твоём городе
+                  li.section11__advantage
+                    .section11__advantage-icon
+                      <svg width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M20.9932 0.613287C21.5581 1.11136 21.6123 1.97307 21.1142 2.53796L9.09072 16.1743C8.8442 16.4539 8.49397 16.6204 8.1215 16.6351C7.74904 16.6497 7.38681 16.5113 7.11908 16.2519L0.960724 10.286C0.419806 9.76197 0.406103 8.89867 0.930117 8.35776C1.45413 7.81684 2.31743 7.80314 2.85835 8.32715L7.99024 13.2987L19.0685 0.734266C19.5666 0.169375 20.4283 0.11521 20.9932 0.613287Z" fill="#2D9CDB"/>
+                      </svg>
+                    p.section11__advantage-text Бизнес-модель на примере Красноярска и Барнаула
+                  li.section11__advantage
+                    .section11__advantage-icon
+                      <svg width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M20.9932 0.613287C21.5581 1.11136 21.6123 1.97307 21.1142 2.53796L9.09072 16.1743C8.8442 16.4539 8.49397 16.6204 8.1215 16.6351C7.74904 16.6497 7.38681 16.5113 7.11908 16.2519L0.960724 10.286C0.419806 9.76197 0.406103 8.89867 0.930117 8.35776C1.45413 7.81684 2.31743 7.80314 2.85835 8.32715L7.99024 13.2987L19.0685 0.734266C19.5666 0.169375 20.4283 0.11521 20.9932 0.613287Z" fill="#2D9CDB"/>
+                      </svg>
+                    p.section11__advantage-text Консультация менеджера и демонстрация нашей базы
+            .section11__form
+              .feedback-form__thanks.hidden 
+                h3 Спасибо за заявку!
+                p Менеджер свяжется с тобой в рабочее время, а пока ты можешь скачать и посмотреть презентацию
+                //- +button('', 'secondary-color,raised')
+                //-   .button__text
+                //-     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                //-     <path d="M15.2737 9.36625C15.1657 9.1425 14.9284 9 14.6671 9H12.0004V0.625C12.0004 0.28 11.7017 0 11.3337 0H8.66707C8.29907 0 8.00041 0.28 8.00041 0.625V9H5.33374C5.07241 9 4.83507 9.14375 4.72707 9.36625C4.61774 9.59 4.66041 9.85125 4.83241 10.0363L9.49907 14.7863C9.62574 14.9225 9.80841 15 10.0004 15C10.1924 15 10.3751 14.9213 10.5017 14.7863L15.1684 10.0363C15.3417 9.8525 15.3817 9.59 15.2737 9.36625Z" fill="white"/>
+                //-     <path d="M18 14V18H2V14H0V18.75C0 19.4412 0.597333 20 1.33333 20H18.6667C19.404 20 20 19.4412 20 18.75V14H18Z" fill="white"/>
+                //-     </svg>
+                //-     .button-text Скачать с Яндекс.Диска
+              form.feedback-form
+                .feedback-form__input-wrap
+                  h3.feedback-form__input-title Узнай все подробности
+                  p.feedback-form__description Введи город и телефон, на который мы отправим все детали франшизы
+                  .feedback-form__input-phone
+                    +input-text('city', 'Ваш город', '', 'Город')
+                  .feedback-form__input-phone
+                    +input-text('tel', '+7 (___) ___-__-__', '', 'Телефон')
+                .feedback-form__button
+                  +button('Получить презентацию', 'main-color,raised')
+                .feedback-form__policy 
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="0.5" y="0.5" width="13" height="13" rx="1.5" fill="#FAFAFA" stroke="#E4E3EB"/>
+                  <path d="M3 7L6 10L11 4" stroke="#2D9CDB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  |Согласие 
+                  i Политикой конфиденциальности      
+      <div class="footer__wrap">
+        <footer class="footer">
+          <nav class="footer__nav nav">
+            <div class="nav__item">  
+              a(href="#") О сервисе
+            </div>
+            <div class="nav__item"> 
+              a(href="#") Особенности</div>
+            <div class="nav__item"> 
+              a(href="#") Преимущества</div>
+            <div class="nav__item"> 
+              a(href="#") Условия</div>
+            <div class="nav__item"> 
+              a(href="#") Этапы открытия</div>
+            <div class="nav__item"> 
+              a(href="#") Отзывы</div>
+          </nav>
+          <section class="footer__logo-phone">
+            <div class="footer__logo">
+            <svg width="105" height="24" viewBox="0 0 105 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M9.50879 20C12.2702 20 14.5088 17.7614 14.5088 15C14.5088 12.2386 12.2702 10 9.50879 10C6.74737 10 4.50879 12.2386 4.50879 15C4.50879 17.7614 6.74737 20 9.50879 20ZM9.50879 24C14.4794 24 18.5088 19.9706 18.5088 15C18.5088 10.0294 14.4794 6 9.50879 6C4.53823 6 0.508789 10.0294 0.508789 15C0.508789 19.9706 4.53823 24 9.50879 24Z" fill="#F5F5FA"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M72.0509 22.4502C70.6108 23.4284 68.8721 24 67 24C62.0294 24 58 19.9706 58 15C58 10.0294 62.0294 6 67 6C68.8721 6 70.6108 6.57162 72.0509 7.54985C72.2551 6.66205 73.0502 6 74 6C75.1046 6 76 6.89543 76 8V15V22C76 23.1046 75.1046 24 74 24C73.0502 24 72.2551 23.3379 72.0509 22.4502ZM72 15C72 17.7614 69.7614 20 67 20C64.2386 20 62 17.7614 62 15C62 12.2386 64.2386 10 67 10C69.7614 10 72 12.2386 72 15Z" fill="#F5F5FA"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M40 8C40 6.89543 40.8954 6 42 6C42.906 6 43.6713 6.60242 43.9172 7.42855C45.1441 6.6739 46.5371 6.00391 48.0039 6.00391C52 6.00391 56 8.02722 56 13V22C56 23.1046 55.1046 24 54 24C52.8954 24 52 23.1046 52 22V14C52 11.5 50 10 48.0039 10C47 10 45.0749 10.3833 44 12V22C44 23.1046 43.1046 24 42 24C40.8954 24 40 23.1046 40 22V8Z" fill="#F5F5FA"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M21 2C21 0.89543 21.8954 0 23 0C24.1046 0 25 0.895431 25 2V13.9982L33.6602 6.47307C34.494 5.74858 35.7572 5.83717 36.4817 6.67095C37.2062 7.50473 37.1176 8.76795 36.2839 9.49245L30.418 14.5895L36.4049 20.5764C37.186 21.3575 37.186 22.6238 36.4049 23.4048C35.6239 24.1859 34.3576 24.1859 33.5765 23.4048L27.3912 17.2195L25 19.2973V22C25 23.1046 24.1046 24 23 24C21.8954 24 21 23.1046 21 22V2Z" fill="#F5F5FA"/>
+              <rect x="83" y="1" width="2" height="14" rx="1" fill="#4FCF84"/>
+              <rect opacity="0.5" x="97.1855" y="12.5996" width="2" height="8.20711" rx="1" transform="rotate(-45 97.1855 12.5996)" fill="#4FCF84"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M94 13C96.7614 13 99 10.7614 99 8C99 5.23858 96.7614 3 94 3C91.2386 3 89 5.23858 89 8C89 10.7614 91.2386 13 94 13ZM94 15C97.866 15 101 11.866 101 8C101 4.13401 97.866 1 94 1C90.134 1 87 4.13401 87 8C87 11.866 90.134 15 94 15Z" fill="#4FCF84"/>
+            </svg>
+            </div>
+            <a href="tel:+79999999999" class="footer__phone">+7 (999) 999-99-99</a>
+          </section>
+          <section>
+              <a href="email: franchise@okna.io " class="footer__email">franchise@okna.io</a>
+              <p class="footer__copy">ООО «ОКНА–Новостройки» © 2019 </p>
+          </section>
+        </footer>
+      </div>
       script(src='./main.js')
