@@ -197,8 +197,13 @@ body {
     position: absolute;
     top: calc(50% - 200px);
     left: calc(50% - 372/2*1px);
-    z-index: 1000;
+    z-index: 10000;
+    margin: 0;
+
+
+    form {z-index: 10001;}
   }
+
 }
 
 .header {

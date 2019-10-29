@@ -57,6 +57,7 @@ const FILE_NAME = 'filename';
     button.addEventListener('click', e => {
 
       button.parentNode.classList.toggle('hidden')
+      document.querySelector('.feedback-form__modal-bg').classList.toggle('hidden')
     })
   })
 })()

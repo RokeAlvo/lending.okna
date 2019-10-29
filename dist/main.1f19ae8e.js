@@ -289,6 +289,7 @@ var FILE_NAME = 'filename';
   Array.from(closeButtons).forEach(function (button) {
     button.addEventListener('click', function (e) {
       button.parentNode.classList.toggle('hidden');
+      document.querySelector('.feedback-form__modal-bg').classList.toggle('hidden');
     });
   });
 })();
@@ -10453,8 +10454,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var downloadHandler = function downloadHandler(e) {
   e.preventDefault();
   var form = document.querySelector('.page__modal-form');
+  var bg = document.querySelector('.feedback-form__modal-bg');
   form.style.top = window.pageYOffset + 50 + 'px';
   form.classList.remove('hidden');
+  bg.classList.remove('hidden');
 };
 
 (function main() {

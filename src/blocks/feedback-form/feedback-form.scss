@@ -83,5 +83,16 @@
     position: absolute;
     right: 16px;
     top: 16px;
+    z-index: 1000;
+  }
+
+  &__modal-bg{
+    width: 100vw;
+    height: 10000000px;
+    background: rgba(black, 0.6);
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 999;
   }
 }

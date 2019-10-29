@@ -6,8 +6,10 @@ import Swiper from 'swiper';
 const downloadHandler = e=>{
   e.preventDefault()
   const form = document.querySelector('.page__modal-form');
+  const bg = document.querySelector('.feedback-form__modal-bg')
   form.style.top=window.pageYOffset + 50 + 'px';
   form.classList.remove('hidden')
+  bg.classList.remove('hidden')
 }
 
 (function main() {
