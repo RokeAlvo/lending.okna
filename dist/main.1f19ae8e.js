@@ -233,6 +233,7 @@ require("./../button/button");
 
 var API = '';
 var PRESENTATION_URL = 'http://example.com/a.txt';
+var FILE_NAME = 'filename';
 
 (function () {
   var forms = document.querySelectorAll('.feedback-form');
@@ -249,15 +250,29 @@ var PRESENTATION_URL = 'http://example.com/a.txt';
       var phone = e.target.querySelector('input[type=tel]').value;
       var cityInput = e.target.querySelector('input[type=city]');
       var city = cityInput ? cityInput.value : '';
+      var id = form.id === 'feedback-form1' ? 1 : 2;
       console.log('телефон', phone);
       console.log('city', city);
-      downloadFile(PRESENTATION_URL, name = 'okna');
+      console.log("id", id);
+      fetch(API, {
+        method: 'POST',
+        body: JSON.stringify({
+          city: city,
+          phone: phone,
+          id: id
+        }),
+        headers: {
+          'content-type': 'application/json'
+        }
+      }).then(function () {
+        downloadFile(PRESENTATION_URL, name = 'okna');
+      });
     });
   });
 })();
 
 function downloadFile(url) {
-  var name = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'file';
+  var name = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : FILE_NAME;
   var type = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 'text/plain';
   // const { createElement } = document
   // const { URL: { createObjectURL, revokeObjectURL }, setTimeout } = window
@@ -10462,7 +10477,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38601" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44941" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
