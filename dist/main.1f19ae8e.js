@@ -231,12 +231,13 @@ require("./../input-text/input-text");
 
 require("./../button/button");
 
-var API = '';
+var API = 'partner-requests/';
 var PRESENTATION_URL = 'http://example.com/a.txt';
 var FILE_NAME = 'filename';
 
 (function () {
   var forms = document.querySelectorAll('.feedback-form');
+  var closeButtons = document.querySelectorAll('.feedback-form__close');
   Array.from(forms).forEach(function (form) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
@@ -250,10 +251,26 @@ var FILE_NAME = 'filename';
       var phone = e.target.querySelector('input[type=tel]').value;
       var cityInput = e.target.querySelector('input[type=city]');
       var city = cityInput ? cityInput.value : '';
-      var id = form.id === 'feedback-form1' ? 1 : 2;
-      console.log('телефон', phone);
-      console.log('city', city);
-      console.log("id", id);
+      var id = null;
+
+      switch (form.id) {
+        case 'feedback-form1':
+          id = 1;
+          break;
+
+        case 'feedback-form2':
+          id = 2;
+          break;
+
+        case 'feedback-form-modal':
+          id = 3;
+          break;
+
+        default:
+          id = 0;
+          break;
+      }
+
       fetch(API, {
         method: 'POST',
         body: JSON.stringify({
@@ -267,6 +284,11 @@ var FILE_NAME = 'filename';
       }).then(function () {
         downloadFile(PRESENTATION_URL, name = 'okna');
       });
+    });
+  });
+  Array.from(closeButtons).forEach(function (button) {
+    button.addEventListener('click', function (e) {
+      button.parentNode.classList.toggle('hidden');
     });
   });
 })();
@@ -10428,6 +10450,13 @@ var _swiper = _interopRequireDefault(require("swiper"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+var downloadHandler = function downloadHandler(e) {
+  e.preventDefault();
+  var form = document.querySelector('.page__modal-form');
+  form.style.top = window.pageYOffset + 50 + 'px';
+  form.classList.remove('hidden');
+};
+
 (function main() {
   var burger = document.querySelector('.header__burger');
   var nav = document.querySelector('.header__nav');
@@ -10448,6 +10477,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       prevEl: '.swiper-button-prev'
     }
   });
+  var navDownloadLink = document.querySelector('.header__download-link');
+  var downloadButton = document.querySelector("body > div.section6-2__img > div > button");
+  navDownloadLink.addEventListener('click', downloadHandler);
+  downloadButton.addEventListener('click', downloadHandler);
 })();
 },{"./../node_modules/swiper/css/swiper.min.css":"../node_modules/swiper/css/swiper.min.css","./main.scss":"main.scss","./blocks/feedback-form/feedback-form":"blocks/feedback-form/feedback-form.js","swiper":"../node_modules/swiper/js/swiper.esm.bundle.js"}],"../../../.nvm/versions/node/v12.11.1/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];

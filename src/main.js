@@ -3,6 +3,13 @@ import './main.scss';
 import './blocks/feedback-form/feedback-form'
 import Swiper from 'swiper';
 
+const downloadHandler = e=>{
+  e.preventDefault()
+  const form = document.querySelector('.page__modal-form');
+  form.style.top=window.pageYOffset + 50 + 'px';
+  form.classList.remove('hidden')
+}
+
 (function main() {
   const burger = document.querySelector('.header__burger');
   const nav = document.querySelector('.header__nav')
@@ -26,4 +33,10 @@ import Swiper from 'swiper';
     },
 
   });
+
+  const navDownloadLink = document.querySelector('.header__download-link');
+  const downloadButton = document.querySelector("body > div.section6-2__img > div > button");
+  navDownloadLink.addEventListener('click', downloadHandler)
+  downloadButton.addEventListener('click', downloadHandler )
 })()
+

@@ -1,6 +1,7 @@
 // @import './../../includes/variables.scss';
 
 .feedback-form {
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -77,4 +78,10 @@
     }
   }
 
+  &__close{
+    cursor: pointer;
+    position: absolute;
+    right: 16px;
+    top: 16px;
+  }
 }

@@ -2,12 +2,14 @@ import './feedback-form.scss'
 import './../input-text/input-text'
 import './../button/button'
 
-const API = '';
+const API = 'partner-requests/';
 const PRESENTATION_URL = 'http://example.com/a.txt';
 const FILE_NAME = 'filename';
 
 (function () {
   const forms = document.querySelectorAll('.feedback-form');
+  const closeButtons = document.querySelectorAll('.feedback-form__close')
+
   Array.from(forms).forEach(form => {
     form.addEventListener('submit', e => {
       e.preventDefault()
@@ -22,10 +24,21 @@ const FILE_NAME = 'filename';
       const phone = e.target.querySelector('input[type=tel]').value
       const cityInput = e.target.querySelector('input[type=city]');
       const city = cityInput ? cityInput.value : '';
-      const id = form.id === 'feedback-form1' ? 1 : 2
-      console.log('телефон', phone);
-      console.log('city', city);
-      console.log("id", id)
+      let id = null;
+      switch (form.id) {
+        case 'feedback-form1':
+          id = 1
+          break;
+        case 'feedback-form2':
+          id = 2
+          break;
+        case 'feedback-form-modal':
+          id = 3
+          break;
+        default:
+          id=0;
+          break;
+      }
       fetch(API, {
         method: 'POST', body: JSON.stringify({
           city: city,
@@ -37,6 +50,13 @@ const FILE_NAME = 'filename';
           downloadFile(PRESENTATION_URL, name = 'okna');
         })
 
+    })
+  });
+
+  Array.from(closeButtons).forEach(button => {
+    button.addEventListener('click', e => {
+
+      button.parentNode.classList.toggle('hidden')
     })
   })
 })()
