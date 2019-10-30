@@ -163,9 +163,11 @@ body {
 .page {
   .page__header {
     position: sticky;
+    top: 0;
     height: 64px;
     display: flex;
     align-items: center;
+    z-index: 50;
 
     @media screen and (max-width: $screen-xl) {
       height: 56px;
@@ -281,13 +283,13 @@ body {
 
 nav {
   margin-left: 108px;
-  padding-top: 16px;
 
   @media screen and (max-width: $screen-xl) {
     margin-left: 0;
     display: flex;
     flex-direction: column;
     min-width: 255px;
+    padding-top: 16px;
   }
   @media screen and (max-width: $screen-sm) {
     padding-bottom: 16px;
