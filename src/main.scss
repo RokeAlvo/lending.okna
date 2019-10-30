@@ -162,6 +162,7 @@ body {
 
 .page {
   .page__header {
+    position: sticky;
     height: 64px;
     display: flex;
     align-items: center;
