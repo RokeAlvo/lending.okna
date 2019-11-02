@@ -23,6 +23,9 @@ const downloadHandler = e=>{
   burger.addEventListener('click', (e) => {
     nav.classList.toggle('hidden')
   })
+  nav.addEventListener('click', (e) => {
+    nav.classList.toggle('hidden')
+  })
 
   const mySwiper = new Swiper('.swiper-container', {
 

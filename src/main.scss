@@ -89,7 +89,6 @@ video {
   font: inherit;
   vertical-align: baseline;
   box-sizing: border-box;
-
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -158,6 +157,7 @@ html {
 
 body {
   min-width: 360px;
+  max-width: 1920px;
 }
 
 .page {
@@ -184,7 +184,7 @@ body {
     align-items: center;
   }
 
-  &__modal-form{
+  &__modal-form {
     position: relative;
     display: flex;
     align-items: center;
@@ -199,14 +199,14 @@ body {
     padding: 40px 46px;
     position: absolute;
     top: calc(50% - 200px);
-    left: calc(50% - 372/2*1px);
+    left: calc(50% - 372 / 2 * 1px);
     z-index: 10000;
     margin: 0;
 
-
-    form {z-index: 10001;}
+    form {
+      z-index: 10001;
+    }
   }
-
 }
 
 .header {
@@ -326,7 +326,6 @@ nav {
     color: inherit;
     text-decoration: inherit;
   }
-  
 }
 
 .hidden {
@@ -362,7 +361,7 @@ nav {
   }
 
   &__promo {
-    max-width: 763px;
+    width: 763px;
     // position: absolute;
     left: calc(378 / 1920 * 100vw);
     top: calc(162 / 900 * 100vh);
@@ -487,6 +486,7 @@ nav {
     margin-bottom: 64px;
     @media screen and (min-width: $screen-lg) {
       margin-bottom: 80px;
+      font-size: 40/16 * 1rem;
     }
   }
 
@@ -560,6 +560,9 @@ nav {
     margin: auto;
     margin-bottom: 24px;
     max-width: 772px;
+    @media screen and (min-width: $screen-md) {
+      font-size: 40/16 * 1rem;
+    }
   }
 
   &__content {
@@ -572,6 +575,9 @@ nav {
     color: $main-title-color;
     max-width: 441px;
     margin: 0 auto 56px;
+    @media screen and (min-width: $screen-md) {
+      font-size: 18/16 * 1rem;
+    }
   }
 
   &__video {
@@ -666,6 +672,14 @@ nav {
       max-width: 672px;
       margin: 0 auto 32px auto;
       text-align: center;
+      font-size: 40px;
+    }
+
+    @media screen and (min-width: $screen-xl) {
+      max-width: 768px;
+      margin: 0 auto 32px auto;
+      text-align: center;
+      font-size: 40px;
     }
   }
 
@@ -761,6 +775,9 @@ nav {
     color: $strong-color;
     font-weight: 900;
     margin-bottom: 64px;
+    @media screen and (min-width: $screen-md) {
+      font-size: 40px;
+    }
   }
 }
 
@@ -1418,12 +1435,15 @@ $pagination-offset: 16px;
     line-height: 120%;
     color: $strong-color;
     margin-bottom: 64px;
+    @media screen and (min-width: $screen-md) {
+      font-size: 40/16 * 1rem;
+    }
   }
 
   &__reviews {
     @media screen and (min-width: $screen-xl) {
       display: flex;
-      max-width: 2 * 570px + 16px;
+      min-width: 2 * 570px + 16px;
       justify-content: space-between;
     }
   }
@@ -1669,7 +1689,6 @@ $pagination-offset: 16px;
       margin: 0 auto 16px auto;
       max-width: 602px + 191px +372px;
     }
-
   }
 
   &__slogan-big {
@@ -1686,7 +1705,6 @@ $pagination-offset: 16px;
       margin: 0 auto 80px auto;
       max-width: 602px + 191px +372px;
     }
-
   }
 
   &__content {
@@ -1800,16 +1818,15 @@ $pagination-offset: 16px;
   align-items: center;
 
   &__wrap {
-    background-color: #2D383E;
+    background-color: #2d383e;
     padding: 64px 0 32px;
-  
   }
 
   &__nav {
     margin-bottom: 56px;
   }
 
-  &__logo{
+  &__logo {
     margin-bottom: 64px;
     @media screen and (min-width: 768px) {
       margin: 0;
@@ -1818,46 +1835,43 @@ $pagination-offset: 16px;
 
   &__logo-phone {
     @media screen and (min-width: 1200px) {
-        position: absolute;
-        top:0;
+      position: absolute;
+      top: 0;
     }
-
   }
-  &__phone{
+  &__phone {
     font-size: 22px;
     font-weight: bold;
     line-height: 130%;
     text-align: center;
     letter-spacing: 0.2px;
-    color: #F5F5FA;
+    color: #f5f5fa;
     margin-bottom: 16px;
     @media screen and (min-width: 768px) {
       margin: 0;
     }
-
   }
 
-  &__logo-phone{
+  &__logo-phone {
   }
 
-  &__copy{
+  &__copy {
     font-family: Gilroy;
     font-size: 16px;
     line-height: 140%;
-    color: #7290A1;
+    color: #7290a1;
   }
 
-  &__email{
+  &__email {
     font-size: 18px;
     line-height: 140%;
     text-align: center;
     letter-spacing: 0.2px;
-    color: #2D9CDB;  
-    margin-bottom: 56px;  
+    color: #2d9cdb;
+    margin-bottom: 56px;
     @media screen and (min-width: 768px) {
       margin: 0;
     }
-
   }
   a {
     // color: inherit;
@@ -1873,9 +1887,9 @@ $pagination-offset: 16px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      width: 768px - 2*48px;
+      width: 768px - 2 * 48px;
     }
-    
+
     @media screen and (min-width: 1200px) {
       display: flex;
       flex-direction: row;
@@ -1884,34 +1898,32 @@ $pagination-offset: 16px;
 
       &:first-child {
         position: absolute;
-        top:0;
+        top: 0;
       }
     }
 
-    &:last-child{
-      // 
-    }  
+    &:last-child {
+      //
+    }
   }
-  
 }
 
 .nav {
   font-size: 16px;
   line-height: 140%;
   text-align: center;
-  color: #F5F5FA;
+  color: #f5f5fa;
 
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 768px - 2*48px;
+    width: 768px - 2 * 48px;
   }
 
   @media screen and (min-width: 1200px) {
     margin-left: 0;
   }
-
 
   &__item {
     z-index: 2;
@@ -1921,5 +1933,4 @@ $pagination-offset: 16px;
       margin: 0;
     }
   }
-
 }

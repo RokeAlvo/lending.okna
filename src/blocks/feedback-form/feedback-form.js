@@ -3,8 +3,8 @@ import './../input-text/input-text'
 import './../button/button'
 
 const API = 'partner-requests/';
-const PRESENTATION_URL = 'http://example.com/a.txt';
-const FILE_NAME = 'filename';
+const PRESENTATION_URL = '/presentation.mp4';
+const FILE_NAME = '/presentation.mp4';
 
 (function () {
   const forms = document.querySelectorAll('.feedback-form');
@@ -47,7 +47,10 @@ const FILE_NAME = 'filename';
         }), headers: { 'content-type': 'application/json' }
       })
         .then(() => {
-          downloadFile(PRESENTATION_URL, name = 'okna');
+          downloadFile(PRESENTATION_URL, name = '');
+        })
+        .then(()=>{
+          document.location.href = "/thanks.html";
         })
 
     })
@@ -68,7 +71,7 @@ function downloadFile(url, name = FILE_NAME, type = 'text/plain') {
   // const blob = new Blob([data], { type })
   // const url = createObjectURL(blob)
 
-  const anchor = createElement('a')
+  const anchor = document.createElement('a')
   anchor.setAttribute('href', url)
   anchor.setAttribute('download', name)
   anchor.click()
