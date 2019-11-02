@@ -2,18 +2,20 @@
   "name": "okna-lending",
   "version": "1.0.0",
   "description": "",
-  "main": "index.pug",
+  "main": "dist/index.html",
+  "source": ["src/index.pug", "src/thanks.html"],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel src/index.pug",
-    "build": "parcel build src/index.pug -d docs --public-url ./"
+    "start": "parcel serve src/index.pug src/thanks.html",
+    "build": "parcel build src/index.pug src/thanks.html -d docs --public-url ./"
   },
   "author": "rokealvo",
   "license": "ISC",
   "devDependencies": {
     "cssnano": "^4.1.10",
     "pug": "^2.0.4",
-    "sass": "^1.23.1"
+    "sass": "^1.23.1",
+    "parcel": "latest"
   },
   "dependencies": {
     "inputmask": "^4.0.9",
