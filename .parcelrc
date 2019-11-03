@@ -1,0 +1,6 @@
+{
+  "transforms": {
+    "fonts/": ["highest-priority"],
+    "*.svg": ["lowest-priority"]
+  }
+}

@@ -90,6 +90,7 @@ video {
   vertical-align: baseline;
   box-sizing: border-box;
 }
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -105,17 +106,21 @@ section {
   display: block;
   box-sizing: border-box;
 }
+
 body {
   line-height: 1;
 }
+
 ol,
 ul {
   list-style: none;
 }
+
 blockquote,
 q {
   quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
@@ -123,6 +128,7 @@ q:after {
   content: "";
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -156,7 +162,7 @@ html {
 }
 
 body {
-  min-width: 360px;
+  // min-width: 360px;
   max-width: 1920px;
 }
 
@@ -294,6 +300,7 @@ nav {
     min-width: 255px;
     padding-top: 16px;
   }
+
   @media screen and (max-width: $screen-sm) {
     padding-bottom: 16px;
   }
@@ -322,6 +329,7 @@ nav {
       }
     }
   }
+
   a {
     color: inherit;
     text-decoration: inherit;
@@ -338,6 +346,7 @@ nav {
   width: 100%;
   min-height: calc(100vh - 64px);
   background-size: cover;
+  background-repeat: no-repeat;
   background-position-x: center;
   display: flex;
   justify-content: center;
@@ -355,6 +364,7 @@ nav {
 
   @media screen and (max-width: $screen-sm) and (min-width: $screen-xs) {
     background-image: url("./images/loon-image-original-min.jpg");
+    background-size: auto;
     background-position-x: left;
     flex-direction: column;
     padding: 96px 16px 0;
@@ -362,6 +372,9 @@ nav {
 
   &__promo {
     width: 763px;
+    @media screen and (max-width: $screen-md){
+      max-width: 100%;
+    }
     // position: absolute;
     left: calc(378 / 1920 * 100vw);
     top: calc(162 / 900 * 100vh);
@@ -394,6 +407,7 @@ nav {
       line-height: 130%;
       letter-spacing: 0.2px;
       color: $strong-color;
+
       @media screen and (max-width: $screen-sm) and (min-width: $screen-xs) {
         font-size: 1rem;
         margin-top: 16px;
@@ -411,6 +425,7 @@ nav {
       // list-style-type: circle;
       color: $main-title-color;
     }
+
     li {
       font-weight: 600;
       font-size: 18/16 * 1rem;
@@ -418,6 +433,7 @@ nav {
       letter-spacing: 0.2px;
       display: flex;
       align-items: center;
+
       @media screen and (max-width: $screen-xl) {
         margin-bottom: 18px;
         align-items: flex-start;
@@ -473,6 +489,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+
   @media screen and (min-width: $screen-lg) {
     padding: 120px 16px;
   }
@@ -484,6 +501,7 @@ nav {
     font-weight: 900;
     text-align: center;
     margin-bottom: 64px;
+
     @media screen and (min-width: $screen-lg) {
       margin-bottom: 80px;
       font-size: 40/16 * 1rem;
@@ -505,6 +523,7 @@ nav {
 
   &__card {
     margin-bottom: 50px;
+
     &:last-child {
       margin-bottom: 0;
     }
@@ -519,6 +538,7 @@ nav {
 
   &__image {
     margin-bottom: 24px;
+
     @media screen and (min-width: $screen-lg) {
       min-height: 180px;
     }
@@ -547,6 +567,7 @@ nav {
 
 .section3 {
   padding: 80px 16px;
+
   @media screen and (min-width: $screen-lg) {
     padding: 120px 48px;
   }
@@ -560,6 +581,7 @@ nav {
     margin: auto;
     margin-bottom: 24px;
     max-width: 772px;
+
     @media screen and (min-width: $screen-md) {
       font-size: 40/16 * 1rem;
     }
@@ -575,6 +597,7 @@ nav {
     color: $main-title-color;
     max-width: 441px;
     margin: 0 auto 56px;
+
     @media screen and (min-width: $screen-md) {
       font-size: 18/16 * 1rem;
     }
@@ -594,6 +617,7 @@ nav {
   margin: auto;
   margin-bottom: 80px;
   max-width: 966px + 2 * 48px;
+
   @media screen and (min-width: $screen-md) {
     padding: 0 48px;
     margin-bottom: 120px;
@@ -617,6 +641,7 @@ nav {
 
   &__description {
     line-height: 140%;
+
     @media screen and (min-width: $screen-md) {
       max-width: 471px;
     }
@@ -626,6 +651,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
     @media screen and (min-width: $screen-md) {
       max-width: 471px;
       justify-content: flex-end;
@@ -636,6 +662,7 @@ nav {
 .counter-card {
   max-width: 168px;
   margin-bottom: 38px;
+
   @media screen and (min-width: $screen-md) {
     max-width: 180px;
   }
@@ -651,11 +678,9 @@ nav {
   }
 }
 
-.section6-1 {
-}
-
 .section6-2 {
   padding: 120px 0 0 0;
+
   @media screen and (min-width: $screen-md) {
     padding: 136px 0 0 0;
   }
@@ -704,10 +729,12 @@ nav {
     height: 346px;
     background: url("./images/divide-img-phone.jpg") no-repeat center;
     background-size: cover;
+
     @media screen and (min-width: $screen-md) {
       height: 587px;
       background: url("./images/divide-img-tablet.jpg") no-repeat center;
     }
+
     @media screen and (min-width: $screen-xl) {
       height: 587px;
       background: url("./images/divide-img-desktop.jpg") no-repeat center;
@@ -732,6 +759,7 @@ nav {
   &__article {
     display: flex;
     flex-wrap: wrap;
+
     @media screen and (min-width: $screen-xl) {
       max-width: 2 * 574px + 16px;
       justify-content: space-between;
@@ -742,6 +770,7 @@ nav {
   &__condition {
     width: 100%;
     margin-bottom: 16px;
+
     @media screen and (min-width: $screen-xl) {
       max-width: 574px;
     }
@@ -775,6 +804,7 @@ nav {
     color: $strong-color;
     font-weight: 900;
     margin-bottom: 64px;
+
     @media screen and (min-width: $screen-md) {
       font-size: 40px;
     }
@@ -852,6 +882,7 @@ nav {
 
 .condition {
   margin-bottom: 24px;
+
   &__title {
     font-size: 16px;
     line-height: 130%;
@@ -860,6 +891,7 @@ nav {
     font-weight: bold;
     margin-bottom: 16px;
   }
+
   &__item {
     font-size: 16px;
     line-height: 130%;
@@ -874,6 +906,7 @@ nav {
     }
   }
 }
+
 .add-margin-top40 {
   margin-top: 40px;
 }
@@ -923,9 +956,6 @@ nav {
     margin-bottom: 80px;
   }
 
-  &__image1 {
-  }
-
   &__image2 {
     position: absolute;
     top: -56px;
@@ -955,7 +985,8 @@ nav {
   $grey: rgba(220, 231, 235, 1);
   $red: rgba(255, 104, 115, 1);
   $black: rgba(48, 69, 92, 0.8);
-  $sans: "Titillium Web", sans-serif;
+  $sans: "Titillium Web",
+  sans-serif;
 
   .transition {
     transition: all 0.25s ease-in-out;
@@ -1018,6 +1049,7 @@ nav {
     letter-spacing: 0.2px;
     color: $main-title-color;
   }
+
   p {
     color: $main-color;
     line-height: 140%;
@@ -1062,9 +1094,11 @@ nav {
     &:nth-of-type(3) {
       animation-delay: 1s;
     }
+
     &:last-of-type {
       padding-bottom: 0;
     }
+
     i {
       // position: absolute;
       // transform: translate(-6px, 0);
@@ -1109,14 +1143,14 @@ nav {
       opacity: 0;
 
       &:checked {
-        & ~ p {
+        &~p {
           margin-top: 0;
           max-height: 0;
           opacity: 0;
           transform: translate(0, 50%);
         }
 
-        & ~ .accardion__title i {
+        &~.accardion__title i {
           &:before {
             content: "+";
             color: rgba(#0077ff, 0.5);
@@ -1130,24 +1164,30 @@ nav {
       align-items: center;
     }
   }
+
   @keyframes flipdown {
     0% {
       opacity: 0;
       transform-origin: top center;
       transform: rotateX(-90deg);
     }
+
     5% {
       opacity: 1;
     }
+
     80% {
       transform: rotateX(8deg);
     }
+
     83% {
       transform: rotateX(6deg);
     }
+
     92% {
       transform: rotateX(-3deg);
     }
+
     100% {
       transform-origin: top center;
       transform: rotateX(0deg);
@@ -1158,10 +1198,12 @@ nav {
 .swiper-container {
   width: 100%;
   height: 889px;
+
   @media screen and (min-width: $screen-md) {
     width: 673px;
     height: 672px;
   }
+
   @media screen and (min-width: $screen-xl) {
     width: 1164px;
     height: 570px;
@@ -1189,12 +1231,16 @@ nav {
     font-size: 23px;
   }
 }
+
 $pagination-offset: 16px;
+
 .swiper-button-next {
   right: $pagination-offset;
+
   @media screen and (min-width: $screen-md) {
     left: 272px;
   }
+
   @media screen and (min-width: $screen-xl) {
     left: 304px;
   }
@@ -1202,15 +1248,17 @@ $pagination-offset: 16px;
 
 .swiper-button-prev {
   left: $pagination-offset;
+
   @media screen and (min-width: $screen-md) {
     left: 42px;
   }
+
   @media screen and (min-width: $screen-xl) {
     left: 80px;
   }
 }
 
-.swiper-container-horizontal > .swiper-pagination-bullets {
+.swiper-container-horizontal>.swiper-pagination-bullets {
   top: 529px;
 }
 
@@ -1224,10 +1272,12 @@ $pagination-offset: 16px;
   background-repeat: no-repeat;
   border-radius: 16px;
   padding: 64px 16px;
+
   @media screen and (min-width: $screen-md) {
     padding: 64px 48px;
     height: 672px;
   }
+
   @media screen and (min-width: $screen-xl) {
     padding: 64px 80px;
   }
@@ -1240,6 +1290,7 @@ $pagination-offset: 16px;
     color: #ffffff;
     text-shadow: 0px 4px 44px rgba(0, 0, 0, 0.15);
     margin-bottom: 40px;
+
     @media screen and (min-width: $screen-md) {
       text-align: left;
       padding-left: 144px - 48px;
@@ -1271,9 +1322,11 @@ $pagination-offset: 16px;
     @media screen and (min-width: $screen-md) {
       max-width: 350px;
     }
+
     @media screen and (min-width: $screen-xl) {
       font-size: 18px;
     }
+
     @media screen and (min-width: $screen-xl) {
       max-width: 490px;
     }
@@ -1282,11 +1335,13 @@ $pagination-offset: 16px;
       margin-bottom: 10px;
       line-height: 140%;
     }
+
     li {
       font-size: 16px;
       line-height: 140%;
       color: #3c4b53;
       margin-bottom: 8px;
+
       &::before {
         content: "-";
         margin-right: 10px;
@@ -1303,6 +1358,7 @@ $pagination-offset: 16px;
       background-position-x: right -54px;
       background-position-y: 252px;
     }
+
     @media screen and (min-width: $screen-xl) {
       background-position: bottom 252px right -54px;
       background-image: url("./images/feature1-xl.png");
@@ -1313,6 +1369,7 @@ $pagination-offset: 16px;
     background-position: bottom right;
     background-image: url("./images/step2.png");
     background-color: #d6c4fd;
+
     @media screen and (min-width: $screen-md) {
       background-position-x: x-end;
       background-position-y: 321px;
@@ -1329,6 +1386,7 @@ $pagination-offset: 16px;
     background-position: bottom right;
     background-image: url("./images/step3.png");
     background-color: #f5df8e;
+
     @media screen and (min-width: $screen-md) {
       background-position-x: right;
       background-position-y: 321px;
@@ -1345,6 +1403,7 @@ $pagination-offset: 16px;
     background-position: bottom right;
     background-image: url("./images/step4.png");
     background-color: #faaf8f;
+
     @media screen and (min-width: $screen-md) {
       background-position-x: right;
       background-position-y: 321px;
@@ -1361,6 +1420,7 @@ $pagination-offset: 16px;
     background-position: bottom right;
     background-image: url("./images/step5.png");
     background-color: #8aefb9;
+
     @media screen and (min-width: $screen-md) {
       background-position-x: right;
       background-position-y: 321px;
@@ -1377,6 +1437,7 @@ $pagination-offset: 16px;
     background-position: bottom right;
     background-image: url("./images/step6.png");
     background-color: #a3d1fb;
+
     @media screen and (min-width: $screen-md) {
       background-position-x: right;
       background-position-y: 321px;
@@ -1393,6 +1454,7 @@ $pagination-offset: 16px;
     background-position: bottom right;
     background-image: url("./images/step7.png");
     background-color: #87e8e8;
+
     @media screen and (min-width: $screen-md) {
       background-position-x: right;
       background-position-y: 321px;
@@ -1409,6 +1471,7 @@ $pagination-offset: 16px;
     background-position: bottom right;
     background-image: url("./images/step8.png");
     background-color: #e4f486;
+
     @media screen and (min-width: $screen-md) {
       background-position-x: right;
       background-position-y: 321px;
@@ -1435,6 +1498,7 @@ $pagination-offset: 16px;
     line-height: 120%;
     color: $strong-color;
     margin-bottom: 64px;
+
     @media screen and (min-width: $screen-md) {
       font-size: 40/16 * 1rem;
     }
@@ -1462,6 +1526,7 @@ $pagination-offset: 16px;
   &__user-info {
     display: flex;
     flex-direction: column;
+
     @media screen and (min-width: $screen-md) {
       flex-direction: row;
       align-items: center;
@@ -1482,12 +1547,13 @@ $pagination-offset: 16px;
 
   &:nth-child(2) {
     .review-card__avatar {
-      background: url("./images/Mask\ Group.png");
+      background: url("./images/Mask-group.png");
     }
   }
 
   &__user {
     margin-bottom: 32px;
+
     @media screen and (min-width: $screen-md) {
       margin-left: 40px;
     }
@@ -1501,12 +1567,14 @@ $pagination-offset: 16px;
     color: $main-title-color;
     margin-bottom: 8px;
   }
+
   &__user-city {
     font-size: 18/16 * 1rem;
     line-height: 130%;
     letter-spacing: 0.2px;
     color: $main-color;
   }
+
   &__review {
     line-height: 140%;
     color: $main-title-color;
@@ -1515,6 +1583,7 @@ $pagination-offset: 16px;
 
 .section10 {
   padding: 0 16px;
+
   @media screen and (min-width: $screen-md) {
     padding: 0 48px 80px 48px;
   }
@@ -1525,10 +1594,12 @@ $pagination-offset: 16px;
     line-height: 120%;
     color: $strong-color;
     margin-bottom: 64px;
+
     @media screen and (min-width: $screen-md) {
       margin-bottom: 80px;
       font-size: 40/16 * 1rem;
     }
+
     @media screen and (min-width: $screen-xl) {
       max-width: 1156px;
       margin: 0 auto 80px auto;
@@ -1553,13 +1624,11 @@ $pagination-offset: 16px;
         height: 8px;
         position: absolute;
         top: 62px;
-        background: linear-gradient(
-          90deg,
-          #e2edf9 0%,
-          #e2edf9 69.71%,
-          rgba(226, 237, 249, 0.111999) 83.48%,
-          rgba(226, 237, 249, 0) 100%
-        );
+        background: linear-gradient(90deg,
+            #e2edf9 0%,
+            #e2edf9 69.71%,
+            rgba(226, 237, 249, 0.111999) 83.48%,
+            rgba(226, 237, 249, 0) 100%);
       }
     }
   }
@@ -1581,13 +1650,12 @@ $pagination-offset: 16px;
       height: 100%;
       position: absolute;
       left: 65px;
-      background: linear-gradient(
-        90deg,
-        #e2edf9 0%,
-        #e2edf9 69.71%,
-        rgba(226, 237, 249, 0.111999) 83.48%,
-        rgba(226, 237, 249, 0) 100%
-      );
+      background: linear-gradient(90deg,
+          #e2edf9 0%,
+          #e2edf9 69.71%,
+          rgba(226, 237, 249, 0.111999) 83.48%,
+          rgba(226, 237, 249, 0) 100%);
+
       @media screen and (min-width: $screen-md) {
         left: 94px;
       }
@@ -1608,6 +1676,7 @@ $pagination-offset: 16px;
     color: $main-title-color;
     font-weight: bold;
     padding-top: 12px;
+
     @media screen and (min-width: $screen-md) {
       font-size: 18/16 * 1rem;
     }
@@ -1619,9 +1688,11 @@ $pagination-offset: 16px;
 
   &__circles {
     margin-left: 16px;
+
     @media screen and (min-width: $screen-md) {
       margin-left: 40px;
     }
+
     @media screen and (min-width: $screen-xl) {
       margin-left: 0;
       margin-bottom: 16px;
@@ -1649,8 +1720,6 @@ $pagination-offset: 16px;
     }
   }
 
-  .item {
-  }
 }
 
 .section11 {
@@ -1670,6 +1739,7 @@ $pagination-offset: 16px;
     background: url("./images/divider-top.svg");
     height: 43px;
     margin-bottom: 80px;
+
     @media screen and (min-width: $screen-md) {
       margin-bottom: 120px;
     }
@@ -1681,10 +1751,12 @@ $pagination-offset: 16px;
     color: $main-color;
     font-weight: bold;
     margin: 0 16px 16px 16px;
+
     @media screen and (min-width: $screen-md) {
       margin: 0 48px 16px 48px;
       font-size: 20/16 * 1rem;
     }
+
     @media screen and (min-width: $screen-xl) {
       margin: 0 auto 16px auto;
       max-width: 602px + 191px +372px;
@@ -1697,10 +1769,12 @@ $pagination-offset: 16px;
     color: $main-title-color;
     font-weight: 900;
     margin: 0 16px 40px 16px;
+
     @media screen and (min-width: $screen-md) {
       margin: 0 48px 80px 48px;
       font-size: 48/16 * 1rem;
     }
+
     @media screen and (min-width: $screen-xl) {
       margin: 0 auto 80px auto;
       max-width: 602px + 191px +372px;
@@ -1712,6 +1786,7 @@ $pagination-offset: 16px;
       max-width: 288px;
       margin-left: 48px;
     }
+
     @media screen and (min-width: $screen-xl) {
       max-width: 60px + 227px + 32px + 60px + 227px;
       margin: 0;
@@ -1725,9 +1800,11 @@ $pagination-offset: 16px;
     letter-spacing: 0.2px;
     color: $strong-color;
     margin: 0 16px 40px 16px;
+
     @media screen and (min-width: $screen-md) {
       margin: 0 0 110px 0;
     }
+
     @media screen and (min-width: $screen-xl) {
       max-width: 475px;
     }
@@ -1735,10 +1812,12 @@ $pagination-offset: 16px;
 
   &__advantages-list {
     padding: 0 16px 56px 16px;
+
     // margin-bottom: 56px;
     @media screen and (min-width: $screen-md) {
       padding: 0;
     }
+
     @media screen and (min-width: $screen-xl) {
       max-width: 60px + 227px + 32px + 60px + 227px;
 
@@ -1770,6 +1849,7 @@ $pagination-offset: 16px;
     line-height: 140%;
     color: $main-title-color;
     margin-left: 16px;
+
     @media screen and (min-width: $screen-xl) {
       max-width: 227px;
     }
@@ -1785,6 +1865,7 @@ $pagination-offset: 16px;
     padding: 40px;
     display: flex;
     align-items: center;
+
     @media screen and (min-width: $screen-xl) {
       max-width: 372px;
       margin: 0;
@@ -1807,10 +1888,12 @@ $pagination-offset: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
+
   .button-text {
     margin: 0 0 0 10px;
   }
 }
+
 .footer {
   position: relative;
   display: flex;
@@ -1828,6 +1911,7 @@ $pagination-offset: 16px;
 
   &__logo {
     margin-bottom: 64px;
+
     @media screen and (min-width: 768px) {
       margin: 0;
     }
@@ -1839,6 +1923,7 @@ $pagination-offset: 16px;
       top: 0;
     }
   }
+
   &__phone {
     font-size: 22px;
     font-weight: bold;
@@ -1847,12 +1932,10 @@ $pagination-offset: 16px;
     letter-spacing: 0.2px;
     color: #f5f5fa;
     margin-bottom: 16px;
+
     @media screen and (min-width: 768px) {
       margin: 0;
     }
-  }
-
-  &__logo-phone {
   }
 
   &__copy {
@@ -1869,10 +1952,12 @@ $pagination-offset: 16px;
     letter-spacing: 0.2px;
     color: #2d9cdb;
     margin-bottom: 56px;
+
     @media screen and (min-width: 768px) {
       margin: 0;
     }
   }
+
   a {
     // color: inherit;
     text-decoration: inherit;
@@ -1901,10 +1986,6 @@ $pagination-offset: 16px;
         top: 0;
       }
     }
-
-    &:last-child {
-      //
-    }
   }
 }
 
@@ -1929,6 +2010,7 @@ $pagination-offset: 16px;
     z-index: 2;
     margin-bottom: 24px;
     cursor: pointer;
+
     @media screen and (min-width: 768px) {
       margin: 0;
     }
@@ -1945,22 +2027,27 @@ $pagination-offset: 16px;
   // align-items: center;
   background-image: url("./images/last-img-phone-thanks.jpg");
   background-size: cover;
+
   @media screen and (min-width: $screen-md) {
     background-image: url("./images/last-img-desktop-thanks.jpg");
     background-size: cover;
     padding: 48px 40px;
   }
+
   @media screen and (min-width: $screen-xl) {
     background-image: url("./images/last-img-desktop\ \(1\).jpg");
     justify-content: center;
   }
+
   &__logo {
     width: 100%;
     align-self: flex-start;
+
     @media screen and (min-width: $screen-lg) {
       width: 1200px;
     }
   }
+
   &__description {
     // margin-bottom: auto;
     font-style: normal;
@@ -1970,6 +2057,7 @@ $pagination-offset: 16px;
     letter-spacing: 0.2px;
     color: $strong-color;
   }
+
   &__title {
     font-style: normal;
     font-weight: 800;
@@ -1979,8 +2067,8 @@ $pagination-offset: 16px;
     color: $main-title-color;
     margin-bottom: 32px;
     max-width: 499px;
-    @media screen and (min-width: $screen-md) {
-    }
+
+    @media screen and (min-width: $screen-md) {}
   }
 
   &__promo {
