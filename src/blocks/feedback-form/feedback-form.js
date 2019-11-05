@@ -1,10 +1,11 @@
 import './feedback-form.scss'
 import './../input-text/input-text'
 import './../button/button'
+import presentation from './../../presentation-okna.pdf'
 
-const API = 'partner-requests/';
-const PRESENTATION_URL = '/presentation.mp4';
-const FILE_NAME = '/presentation.mp4';
+const API = '/partner-requests/';
+const PRESENTATION_URL = presentation;
+const FILE_NAME = 'presentation.pdf';
 
 (function () {
   const forms = document.querySelectorAll('.feedback-form');
@@ -43,14 +44,14 @@ const FILE_NAME = '/presentation.mp4';
         method: 'POST', body: JSON.stringify({
           city: city,
           phone: phone,
-          id: id
+          type: id
         }), headers: { 'content-type': 'application/json' }
       })
         .then(() => {
-          downloadFile(PRESENTATION_URL, name = '');
+          downloadFile(PRESENTATION_URL, name = FILE_NAME);
         })
         .then(()=>{
-          document.location.href = "/thanks.html";
+          document.location.href = "/franchise/thanks.html";
         })
 
     })
@@ -76,5 +77,5 @@ function downloadFile(url, name = FILE_NAME, type = 'text/plain') {
   anchor.setAttribute('download', name)
   anchor.click()
 
-  setTimeout(() => { revokeObjectURL(url) }, 100)
+  // setTimeout(() => { revokeObjectURL(url) }, 100)
 }
