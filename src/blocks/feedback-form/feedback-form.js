@@ -3,7 +3,7 @@ import './../input-text/input-text'
 import './../button/button'
 import presentation from './../../presentation-okna.pdf'
 
-const API = '/partner-requests/';
+const API = '/partner-requests';
 const PRESENTATION_URL = presentation;
 const FILE_NAME = 'presentation.pdf';
 
