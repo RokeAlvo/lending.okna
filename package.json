@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.html",
-  "source": ["src/index.pug", "src/thanks.html"],
+  "source": [
+    "src/index.pug",
+    "src/thanks.html"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel serve src/index.pug src/thanks.html",
@@ -13,9 +16,10 @@
   "license": "ISC",
   "devDependencies": {
     "cssnano": "^4.1.10",
+    "parcel": "latest",
+    "parcel-plugin-clean-dist": "0.0.6",
     "pug": "^2.0.4",
-    "sass": "^1.23.1",
-    "parcel": "latest"
+    "sass": "^1.23.1"
   },
   "dependencies": {
     "inputmask": "^4.0.9",
