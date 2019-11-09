@@ -10,7 +10,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel serve src/index.pug src/thanks.html",
-    "build": "parcel build src/index.pug src/thanks.html -d docs --public-url ./"
+    "build": "parcel build src/index.pug src/thanks.html -d public --public-url ./"
   },
   "author": "rokealvo",
   "license": "ISC",
