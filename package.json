@@ -23,6 +23,6 @@
   },
   "dependencies": {
     "inputmask": "^4.0.9",
-    "swiper": "^5.2.0"
+    "swiper": "^6.5.1"
   }
 }
